@@ -1,6 +1,6 @@
 # Dialect mapper
 
-Dialectal information given about speakers can vary between corpora. Some corpora may record the municipality of birth, or the county, or others may record the speakers self-assed dialect. We'd like a way of standardiing, or creating a meta-corpora mapping, between dialects and counties and municipalities. 
+Dialectal information given about speakers can vary between corpora. Some corpora may record the municipality of birth, or the county, or others may record the speakers' self-assessed dialect. We'd like a way of standardiing, or creating a meta-corpora mapping, between dialects and counties and municipalities. 
 
 This package is bascially a wrapper around a file mapping between counties, municipalities, and dialects
 
