@@ -52,11 +52,15 @@ class mapper_methods:
         old_municipality = old_municipality.lower().strip()
         if self.use_nbtale_corrections:
             old_municipality = self._get_nbtale_correction(old_municipality)
+        if self.use_npsc_corrections:
+            old_municipality = self._get_npsc_correction(old_municipality)
         return sorted(list(set([x[4] for x in self.raw_csv_data if x[0].lower().strip() == old_municipality])))
     def get_named_dialect_by_new_municipality(self, new_municipality) -> list:
         new_municipality = new_municipality.lower().strip()
         if self.use_nbtale_corrections:
             new_municipality = self._get_nbtale_correction(new_municipality)
+        if self.use_npsc_corrections:
+            new_municipality = self._get_npsc_correction(new_municipality)
         return sorted(list(set([x[4] for x in self.raw_csv_data if x[1].lower().strip() == new_municipality])))
     def get_named_dialect_by_old_county(self, old_county) -> list:
         return sorted(list(set([x[4] for x in self.raw_csv_data if x[2].lower().strip() == old_county.lower().strip()])))
@@ -112,11 +116,15 @@ class mapper_methods:
         old_municipality = old_municipality.lower().strip()
         if self.use_nbtale_corrections:
             old_municipality = self._get_nbtale_correction(old_municipality)
+        if self.use_npsc_corrections:
+            old_municipality = self._get_npsc_correction(old_municipality)
         return sorted(list(set([x[5] for x in self.raw_csv_data if x[0].lower().strip() == old_municipality])))
     def get_numeric_dialect_by_new_municipality(self, new_municipality) -> list:
         new_municipality = new_municipality.lower().strip()
         if self.use_nbtale_corrections:
             new_municipality = self._get_nbtale_correction(new_municipality)
+        if self.use_npsc_corrections:
+            new_municipality = self._get_npsc_correction(new_municipality)
         return sorted(list(set([x[5] for x in self.raw_csv_data if x[1].lower().strip() == new_municipality])))
     def get_numeric_dialect_by_old_county(self, old_county) -> list:
         return sorted(list(set([x[5] for x in self.raw_csv_data if x[2].lower().strip() == old_county.lower().strip()])))
@@ -174,15 +182,38 @@ class mapper_methods:
         for row in cReader:
             self.nbtale_corrections[row[0]] = row[1]
 
+    def enable_npsc_corrections(self) -> None:
+        # There are some place_of_birth's in NPSC that are either cities/towns instead of communes or are places outside of Norway
+        # this method will switch the flag so later queries use the corrected mapping and load the mapping data
+        # NOTE: this will only correct the input. Presumably the resource table has the correct names
+        self.use_npsc_corrections = True
+        cReader = csv.reader(
+            StringIO(
+                pkg_resources.read_text(
+                    mapping_data, 
+                    'npsc_transform.csv'
+                )
+            )
+        )
+        for row in cReader:
+            self.npsc_corrections[row[0]] = row[1]
+
     def _get_nbtale_correction(self, lookup_by: str) -> str:
         if lookup_by in self.nbtale_corrections:
             lookup_by = self.nbtale_corrections[lookup_by]
         return lookup_by
 
+    def _get_npsc_correction(self, lookup_by: str) -> str:
+        if lookup_by in self.npsc_corrections:
+            lookup_by = self.npsc_corrections[lookup_by]
+        return lookup_by
+
     def __init__(self) -> None:
         self.use_nbtale_corrections = False
+        self.use_npsc_corrections = False
         self.raw_csv_data = []
         self.nbtale_corrections = {}
+        self.npsc_corrections = {}
 
         cReader = csv.reader(
             StringIO(

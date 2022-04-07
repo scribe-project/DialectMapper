@@ -168,5 +168,14 @@ class DialectMapperTests(unittest.TestCase):
             None
         )
 
+    def test_npsc_mapper(self):
+        mm = dialect_mapper.mapper_methods()
+        mm.enable_npsc_corrections()
+        named_dialect = mm.get_named_dialect('Vestfossen')
+        self.assertEqual(
+            named_dialect,
+            'Østlandsk'
+        )
+
 if __name__ == "__main__":
     unittest.main()
