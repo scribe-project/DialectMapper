@@ -168,6 +168,15 @@ class DialectMapperTests(unittest.TestCase):
             None
         )
 
+    def test_nbtale_mapper(self):
+        mm = dialect_mapper.mapper_methods()
+        mm.enable_nbtale_corrections()
+        named_dialect = mm.get_named_dialect('hyllestand')
+        self.assertEqual(
+            named_dialect,
+            'Nordvestlandsk'
+        )
+
     def test_npsc_mapper(self):
         mm = dialect_mapper.mapper_methods()
         mm.enable_npsc_corrections()
