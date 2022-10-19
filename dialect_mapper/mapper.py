@@ -38,6 +38,13 @@ class mapper_methods:
             return False
         return True
 
+    def format_dialect_response(self, dialects):
+        if self.collapse_fine_grained_dialects:
+            dialects = [self._collapse_fine_granded_dialects(d) for d in dialects]
+        if len(dialects) == 1:
+            dialects = dialects[0]
+        return dialects
+
     # ----------------- NAMED dialect methods -----------------
     def get_old_municipalities_from_named_dialect(self, named_dialect: str) -> list:
         return sorted(list(set([x[0] for x in self.raw_csv_data if x[4].lower().strip() == named_dialect.lower().strip()])))
@@ -54,6 +61,11 @@ class mapper_methods:
             old_municipality = self._get_nbtale_correction(old_municipality)
         if self.use_npsc_corrections:
             old_municipality = self._get_npsc_correction(old_municipality)
+        # if old_municipality is not a Norwegian muni then it will be none
+        # which causes problems b/c in the csv data old_muni being empty means there isn't an old muni corresponding to the new muni
+        # thus we want to ignore old_munis being none instead of returning all the new munis w/o an old 
+        if old_municipality == '':
+            return []
         return sorted(list(set([x[4] for x in self.raw_csv_data if x[0].lower().strip() == old_municipality])))
     def get_named_dialect_by_new_municipality(self, new_municipality) -> list:
         new_municipality = new_municipality.lower().strip()
@@ -73,10 +85,10 @@ class mapper_methods:
             if resolve_ambigious in ['new', 'old']:
                 if resolve_ambigious == 'new':
                     dialects = self.get_named_dialect_by_new_municipality(lookup_by)
-                    return dialects[0] if len(dialects) == 1 else dialects
+                    return self.format_dialect_response(dialects)
                 else:
                     dialects = self.get_named_dialect_by_old_municipality(lookup_by)
-                    return dialects[0] if len(dialects) == 1 else dialects
+                    return self.format_dialect_response(dialects)
             else:
                 print("Unknown way of resolving ambigious municipality for {}. Using new municipality.".format(lookup_by))
 
@@ -85,19 +97,19 @@ class mapper_methods:
         # is better this can easily be changed                
         dialects = self.get_named_dialect_by_old_municipality(lookup_by)
         if len(dialects) > 0:
-            return dialects[0] if len(dialects) == 1 else dialects
+            return self.format_dialect_response(dialects)
         else:
             dialects = self.get_named_dialect_by_new_municipality(lookup_by)
             if len(dialects) > 0:
-                return dialects[0] if len(dialects) == 1 else dialects
+                return self.format_dialect_response(dialects)
             else:
                 dialects = self.get_named_dialect_by_old_county(lookup_by)
                 if len(dialects) > 0:
-                    return dialects[0] if len(dialects) == 1 else dialects
+                    return self.format_dialect_response(dialects)
                 else:
                     dialects = self.get_named_dialect_by_new_county(lookup_by)
                     if len(dialects) > 0:
-                        return dialects[0] if len(dialects) == 1 else dialects
+                        return self.format_dialect_response(dialects)
                     else:
                         print("ERROR: cannot find named dialect for: {}".format(lookup_by))
                         return None
@@ -118,6 +130,11 @@ class mapper_methods:
             old_municipality = self._get_nbtale_correction(old_municipality)
         if self.use_npsc_corrections:
             old_municipality = self._get_npsc_correction(old_municipality)
+        # if old_municipality is not a Norwegian muni then it will be none
+        # which causes problems b/c in the csv data old_muni being empty means there isn't an old muni corresponding to the new muni
+        # thus we want to ignore old_munis being none instead of returning all the new munis w/o an old 
+        if old_municipality == '':
+            return []
         return sorted(list(set([x[5] for x in self.raw_csv_data if x[0].lower().strip() == old_municipality])))
     def get_numeric_dialect_by_new_municipality(self, new_municipality) -> list:
         new_municipality = new_municipality.lower().strip()
@@ -137,10 +154,10 @@ class mapper_methods:
             if resolve_ambigious in ['new', 'old']:
                 if resolve_ambigious == 'new':
                     dialects = self.get_numeric_dialect_by_new_municipality(lookup_by)
-                    return dialects[0] if len(dialects) == 1 else dialects
+                    return self.format_dialect_response(dialects)
                 else:
                     dialects = self.get_numeric_dialect_by_old_municipality(lookup_by)
-                    return dialects[0] if len(dialects) == 1 else dialects
+                    return self.format_dialect_response(dialects)
             else:
                 print("Unknown way of resolving ambigious municipality for {}. Using new municipality.".format(lookup_by))
 
@@ -149,19 +166,19 @@ class mapper_methods:
         # is better this can easily be changed
         dialects = self.get_numeric_dialect_by_old_municipality(lookup_by)
         if len(dialects) > 0:
-            return dialects[0] if len(dialects) == 1 else dialects
+            return self.format_dialect_response(dialects)
         else:
             dialects = self.get_numeric_dialect_by_new_municipality(lookup_by)
             if len(dialects) > 0:
-                return dialects[0] if len(dialects) == 1 else dialects
+                return self.format_dialect_response(dialects)
             else:
                 dialects = self.get_numeric_dialect_by_old_county(lookup_by)
                 if len(dialects) > 0:
-                    return dialects[0] if len(dialects) == 1 else dialects
+                    return self.format_dialect_response(dialects)
                 else:
                     dialects = self.get_numeric_dialect_by_new_county(lookup_by)
                     if len(dialects) > 0:
-                        return dialects[0] if len(dialects) == 1 else dialects
+                        return self.format_dialect_response(dialects)
                     else:
                         print("ERROR: cannot find numeric dialect for: {}".format(lookup_by))
                         return None
@@ -208,12 +225,26 @@ class mapper_methods:
             lookup_by = self.npsc_corrections[lookup_by]
         return lookup_by
 
+    def enable_fine_grained_dialect_collapse(self):
+        self.collapse_fine_grained_dialects = True
+    def disable_fine_grained_dialect_collapse(self):
+        self.collapse_fine_grained_dialects = False
+
+    def _collapse_fine_granded_dialects(self, dialect):
+        if dialect in ['Østtrøndsk', 'Namdalsk', 'Uttrøndersk']:
+            return 'Trøndsk'
+        elif dialect == 'Midlandsk':
+            return 'Østlandsk'
+        else:
+            return dialect
+
     def __init__(self) -> None:
         self.use_nbtale_corrections = False
         self.use_npsc_corrections = False
         self.raw_csv_data = []
         self.nbtale_corrections = {}
         self.npsc_corrections = {}
+        self.collapse_fine_grained_dialects = False
 
         cReader = csv.reader(
             StringIO(

@@ -168,7 +168,7 @@ class DialectMapperTests(unittest.TestCase):
             None
         )
 
-    def test_nbtale_mapper(self):
+    def test_nbtale_mapper_corrections(self):
         mm = dialect_mapper.mapper_methods()
         mm.enable_nbtale_corrections()
         named_dialect = mm.get_named_dialect('hyllestand')
@@ -177,13 +177,22 @@ class DialectMapperTests(unittest.TestCase):
             'Nordvestlandsk'
         )
 
-    def test_npsc_mapper(self):
+    def test_npsc_mapper_corrections(self):
         mm = dialect_mapper.mapper_methods()
         mm.enable_npsc_corrections()
         named_dialect = mm.get_named_dialect('Vestfossen')
         self.assertEqual(
             named_dialect,
             'Østlandsk'
+        )
+
+    def test_npsc_mapper_corrections_notNorway(self):
+        mm = dialect_mapper.mapper_methods()
+        mm.enable_npsc_corrections()
+        named_dialect = mm.get_named_dialect('Tehran')
+        self.assertEqual(
+            named_dialect,
+            None
         )
 
 if __name__ == "__main__":
