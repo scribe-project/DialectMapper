@@ -183,10 +183,11 @@ class mapper_methods:
                         print("ERROR: cannot find numeric dialect for: {}".format(lookup_by))
                         return None
 
-    def enable_nbtale_corrections(self) -> None:
+    def enable_nbtale_corrections(self, ignore_herøy=True) -> None:
         # NBTale has some human errors in the kommune names. I've created a mapping from the NB Tale names to what they should be
         # this method will switch the flag so later queries use the corrected mapping and load the mapping data
         # NOTE: this will only correct the input. Presumably the resource table has the correct names
+        # HERØY ADDITION: There are 2 kommuner with this name. We cannot reasonably tell them apart. We can ignore the 1 speaker from here
         self.use_nbtale_corrections = True
         cReader = csv.reader(
             StringIO(
@@ -198,6 +199,8 @@ class mapper_methods:
         )
         for row in cReader:
             self.nbtale_corrections[row[0]] = row[1]
+        if ignore_herøy:
+            self.nbtale_corrections['herøy'] = ''
 
     def enable_npsc_corrections(self) -> None:
         # There are some place_of_birth's in NPSC that are either cities/towns instead of communes or are places outside of Norway

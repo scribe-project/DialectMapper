@@ -195,5 +195,14 @@ class DialectMapperTests(unittest.TestCase):
             None
         )
 
+    def test_nbtale_mapper_corrections_herøy(self):
+        mm = dialect_mapper.mapper_methods()
+        mm.enable_nbtale_corrections()
+        named_dialect = mm.get_named_dialect('Herøy')
+        self.assertEqual(
+            named_dialect,
+            None
+        )
+
 if __name__ == "__main__":
     unittest.main()
