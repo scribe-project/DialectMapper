@@ -101,7 +101,17 @@ class plotter_methods:
         height = max_y - min_y
         return svg_list, min_x, min_y, width, height
 
-    def plot_kommune_regions(self, output_svg_filepath, kommune_region_to_value={}, color_map_name='Blues', color_map_levels=50, max_region_value=30, default_color='#66cc99'):
+    def plot_kommune_regions(
+        self, 
+        output_svg_filepath, 
+        kommune_region_to_value={}, 
+        color_map_name='Blues', 
+        color_map_levels=50, 
+        max_region_value=30, 
+        default_color='#66cc99', 
+        final_width='500', 
+        final_height='500'):
+
         cmap = ColorMap(color_map_name, levels=color_map_levels)
         def get_color(dialect_name):
             if dialect_name in kommune_region_to_value:
@@ -111,12 +121,28 @@ class plotter_methods:
         svg_list, min_x, min_y, width, height = self._process_features(self.kommuner_json['features'], get_color)
         with open(output_svg_filepath, 'w') as open_f:
             open_f.write(
-                self.head_bit.format(min_x, min_y, width, height) + 
+                self.head_bit.format(
+                    str(float(final_width)),
+                    str(float(final_height)),
+                    min_x, 
+                    min_y, 
+                    width, 
+                    height ) + 
                 ''.join(svg_list) + 
                 self.end_bit
             )
 
-    def plot_dialect_regions(self, output_svg_filepath, dialect_region_to_value={}, color_map_name='Blues', color_map_levels=50, max_region_value=30, default_color='#66cc99'):
+    def plot_dialect_regions(
+        self, 
+        output_svg_filepath, 
+        dialect_region_to_value={}, 
+        color_map_name='Blues', 
+        color_map_levels=50, 
+        max_region_value=30, 
+        default_color='#66cc99', 
+        final_width='500', 
+        final_height='500'):
+
         cmap = ColorMap(color_map_name, levels=color_map_levels)
         def get_color(dialect_name):
             if dialect_name in dialect_region_to_value:
@@ -127,7 +153,13 @@ class plotter_methods:
         svg_list, min_x, min_y, width, height = self._process_features(self.dialekter_json['features'], get_color)
         with open(output_svg_filepath, 'w') as open_f:
             open_f.write(
-                self.head_bit.format(min_x, min_y, width, height) + 
+                self.head_bit.format(
+                    str(float(final_width)),
+                    str(float(final_height)),
+                    min_x, 
+                    min_y, 
+                    width, 
+                    height ) + 
                 ''.join(svg_list) + 
                 self.end_bit
             )
@@ -150,5 +182,5 @@ class plotter_methods:
             )
         )
         self.stroke_width_pat = re.compile('stroke-width=".*?"')
-        self.head_bit = '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100.0" height="100.0" viewBox="{} {} {} {}" preserveAspectRatio="xMinYMin meet"><g transform="matrix(1,0,0,-1,0,139.540897)">'''
+        self.head_bit = '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{}" height="{}" viewBox="{} {} {} {}" preserveAspectRatio="xMinYMin meet"><g transform="matrix(1,0,0,-1,0,139.540897)">'''
         self.end_bit = '''</g></svg>'''
