@@ -80,7 +80,7 @@ class plotter_methods:
 
     def _create_poly(self, obj, final_width, final_height):
         # convert all lat/lon pairs into x and y 
-        obj = [[self._convert_latlon_to_xy(*pair, mapWidth=final_width, mapHeight=final_height) for pair in shape] for shape in obj]
+        obj = [[self._convert_latlon_to_xy(pair[1], pair[0], mapWidth=final_width, mapHeight=final_height) for pair in shape] for shape in obj]
         if len(obj) > 1:
             return Polygon(obj[0], holes=obj[1:])
         else:
@@ -214,5 +214,5 @@ class plotter_methods:
             )
         )
         self.stroke_width_pat = re.compile('stroke-width=".*?"')
-        self.head_bit = '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{}" height="{}" viewBox="{} {} {} {}" preserveAspectRatio="xMinYMin meet"><g transform="matrix(1,0,0,-1,0,139.540897)">'''
-        self.end_bit = '''</g></svg>'''
+        self.head_bit = '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{}" height="{}" viewBox="{} {} {} {}" preserveAspectRatio="xMinYMin meet">'''
+        self.end_bit = '''</svg>'''
