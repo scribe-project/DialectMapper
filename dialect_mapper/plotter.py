@@ -4,6 +4,9 @@ import matplotlib.colors as mpl_colors
 import re
 from shapely import Polygon, MultiPolygon
 
+import math
+from numpy import log as ln
+
 import sys
 if sys.version_info[0] < 3: 
     from StringIO import StringIO
@@ -56,13 +59,34 @@ class ColorMap():
 
 class plotter_methods:
 
-    def _create_poly(self, obj):
+    def _convert_latlon_to_xy(self, latitude, longitude, mapWidth=200, mapHeight=100):
+        """
+        The geoJSON format keeps points in latitude and longitude format which is fine
+        But if we try to plot the raw values it makes Norway look very stretched east-west
+        Therefore we want a way of converting them into a more standard projection
+        We're uusing the Mercator projection
+        Implementation copied from https://stackoverflow.com/questions/14329691/convert-latitude-longitude-point-to-a-pixels-x-y-on-mercator-projection
+        """
+        x = (longitude + 180) * (mapWidth / 360)
+
+        # convert from degrees to radians
+        latRad = (latitude * math.pi) / 180
+
+        # get y value
+        mercN = ln(math.tan((math.pi / 4) + (latRad / 2)))
+        y     = (mapHeight / 2) - (mapWidth * mercN / (2 * math.pi))
+        
+        return x, y
+
+    def _create_poly(self, obj, final_width, final_height):
+        # convert all lat/lon pairs into x and y 
+        obj = [[self._convert_latlon_to_xy(*pair, mapWidth=final_width, mapHeight=final_height) for pair in shape] for shape in obj]
         if len(obj) > 1:
             return Polygon(obj[0], holes=obj[1:])
         else:
             return Polygon(obj[0])
 
-    def _process_features(self, features, get_color):
+    def _process_features(self, features, get_color, final_width, final_height):
         svg_list = []
         min_x = None
         min_y = None
@@ -70,7 +94,7 @@ class plotter_methods:
         max_y = None
         for region_features in features:
             region_multiPolygon = MultiPolygon(
-                [self._create_poly(obj) for obj in region_features['geometry']['coordinates']]
+                [self._create_poly(obj, final_width, final_height) for obj in region_features['geometry']['coordinates']]
             )
             svg_list.append(
                 self.stroke_width_pat.sub(
@@ -150,12 +174,19 @@ class plotter_methods:
             else:
                 return default_color
 
-        svg_list, min_x, min_y, width, height = self._process_features(self.dialekter_json['features'], get_color)
+        final_width = float(final_width)
+        final_height = float(final_height)
+        svg_list, min_x, min_y, width, height = self._process_features(
+            self.dialekter_json['features'], 
+            get_color,
+            final_width,
+            final_height
+        )
         with open(output_svg_filepath, 'w') as open_f:
             open_f.write(
                 self.head_bit.format(
-                    str(float(final_width)),
-                    str(float(final_height)),
+                    str(final_width),
+                    str(final_height),
                     min_x, 
                     min_y, 
                     width, 
@@ -165,6 +196,7 @@ class plotter_methods:
             )
         
     def __init__(self) -> None:
+        ### Original geoJSON data from https://github.com/robhop/fylker-og-kommuner-2020
         self.dialekter_json = json.load(
             StringIO(
                 pkg_resources.read_text(
