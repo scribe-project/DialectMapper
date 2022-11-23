@@ -194,6 +194,45 @@ class plotter_methods:
                 ''.join(svg_list) + 
                 self.end_bit
             )
+
+    def plot_rundkast_regions(
+        self, 
+        output_svg_filepath, 
+        rundkast_region_to_value={}, 
+        color_map_name='Blues', 
+        color_map_levels=50, 
+        max_region_value=30, 
+        default_color='#66cc99', 
+        final_width='500', 
+        final_height='500'):
+
+        cmap = ColorMap(color_map_name, levels=color_map_levels)
+        def get_color(region_name):
+            if region_name in rundkast_region_to_value:
+                return cmap.to_color_linear_scale(rundkast_region_to_value.get(region_name), max_region_value)
+            else:
+                return default_color
+
+        final_width = float(final_width)
+        final_height = float(final_height)
+        svg_list, min_x, min_y, width, height = self._process_features(
+            self.region_json['features'], 
+            get_color,
+            final_width,
+            final_height
+        )
+        with open(output_svg_filepath, 'w') as open_f:
+            open_f.write(
+                self.head_bit.format(
+                    str(final_width),
+                    str(final_height),
+                    min_x, 
+                    min_y, 
+                    width, 
+                    height ) + 
+                ''.join(svg_list) + 
+                self.end_bit
+            )
         
     def __init__(self) -> None:
         ### Original geoJSON data from https://github.com/robhop/fylker-og-kommuner-2020
@@ -210,6 +249,14 @@ class plotter_methods:
                 pkg_resources.read_text(
                     mapping_data, 
                     'kommuner_komprimert.json'
+                )
+            )
+        )
+        self.region_json = json.load(
+            StringIO(
+                pkg_resources.read_text(
+                    mapping_data, 
+                    'rundkast_regions_geojson.json'
                 )
             )
         )
