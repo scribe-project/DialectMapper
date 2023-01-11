@@ -1,3 +1,7 @@
+"""
+A class to help mapping between Norsk kommuner and dialekt names
+"""
+
 import csv
 import sys
 if sys.version_info[0] < 3: 
@@ -113,6 +117,38 @@ class mapper_methods:
                     else:
                         print("ERROR: cannot find named dialect for: {}".format(lookup_by))
                         return None
+
+    def get_nbtale_named_dialect_from_id(self, speaker_id: str):
+        """ Manual work was done to create a speaker ID to dialect mapping for NB Tale speakers
+            The bulk of the dialects where assigned using this code. However, I (Phoebe) also went
+            through and did my best to add dialects where the kommune was missing but other metadata
+            allowed me to make a guess at the dialect
+
+        Args:
+            speaker_id (str): A speaker ID in the NB Tale format (e.g. "p2_g24_f0_1_t)
+
+        Returns:
+            str: The name of the dialect region for that speaker
+        """
+        if len(self.nbtale_speakers_to_named_dialects) == 0:
+            for module_number in ['1', '2', '3']:
+                c_reader = csv.reader(
+                    StringIO(
+                        pkg_resources.read_text(
+                            mapping_data, 
+                            f'NB_Tale_Informantdata_module_{module_number}_updated.csv'
+                        )
+                    )
+                )
+                for row in c_reader:
+                    csv_speaker_id = row[0]
+                    if csv_speaker_id != 'Informant-ID':
+                        # NOTE this will break if the format of the file changes!
+                        # (e.g. if another column is added)
+                        self.nbtale_speakers_to_named_dialects[csv_speaker_id] = row[-1]
+        if speaker_id in self.nbtale_speakers_to_named_dialects:
+            return self.nbtale_speakers_to_named_dialects[speaker_id]
+        return ''
 
     # ----------------- NUMERIC dialect methods -----------------
     def get_old_municipalities_from_numeric_dialect(self, named_dialect: str) -> list:
@@ -246,6 +282,7 @@ class mapper_methods:
         self.use_npsc_corrections = False
         self.raw_csv_data = []
         self.nbtale_corrections = {}
+        self.nbtale_speakers_to_named_dialects = {}
         self.npsc_corrections = {}
         self.collapse_fine_grained_dialects = False
 
@@ -259,4 +296,4 @@ class mapper_methods:
         )
         for row in cReader:
             self.raw_csv_data.append(row)
-        headers = self.raw_csv_data.pop(0)
+        self.raw_csv_data.pop(0)

@@ -203,6 +203,30 @@ class DialectMapperTests(unittest.TestCase):
             named_dialect,
             None
         )
+    
+    def test_nbtale_named_dialect_from_id_mod1(self):
+        mm = dialect_mapper.mapper_methods()
+        named_dialect = mm.get_nbtale_named_dialect_from_id('p1_g02_f2_4')
+        self.assertEqual(
+            named_dialect,
+            'Troms-Finnmarks-mål'
+        )
+    
+    def test_nbtale_named_dialect_from_id_mod2(self):
+        mm = dialect_mapper.mapper_methods()
+        named_dialect = mm.get_nbtale_named_dialect_from_id('p2_g14_m0_5_t')
+        self.assertEqual(
+            named_dialect,
+            'Utenlandsk'
+        )
+
+    def test_nbtale_named_dialect_from_id_mod3(self):
+        mm = dialect_mapper.mapper_methods()
+        named_dialect = mm.get_nbtale_named_dialect_from_id('p2_g24_n0_5_t')
+        self.assertEqual(
+            named_dialect,
+            'Nordvestlandsk'
+        )
 
 if __name__ == "__main__":
     unittest.main()
