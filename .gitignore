@@ -130,7 +130,7 @@ dmypy.json
 .pyre/
 
 # Ignore temp files
-*temp.*
+*temp*
 
 # Everything in artifacts should be re-create-able from code
 */artifacts/*

@@ -59,7 +59,7 @@ class ColorMap():
 
 class plotter_methods:
 
-    def _convert_latlon_to_xy(self, latitude, longitude, mapWidth=200, mapHeight=100):
+    def _convert_latlon_to_xy(self, latitude, longitude, mapWidth=200, mapHeight=100, move_south=False):
         """
         The geoJSON format keeps points in latitude and longitude format which is fine
         But if we try to plot the raw values it makes Norway look very stretched east-west
@@ -67,6 +67,10 @@ class plotter_methods:
         We're uusing the Mercator projection
         Implementation copied from https://stackoverflow.com/questions/14329691/convert-latitude-longitude-point-to-a-pixels-x-y-on-mercator-projection
         """
+        if move_south:
+            latitude = latitude - self.latitude_southern_adjustment
+            longitude = longitude - self.longitude_southern_adjustment
+
         x = (longitude + 180) * (mapWidth / 360)
 
         # convert from degrees to radians
@@ -78,24 +82,29 @@ class plotter_methods:
         
         return x, y
 
-    def _create_poly(self, obj, final_width, final_height):
+    def _create_poly(self, obj, final_width, final_height, move_south=False):
         # convert all lat/lon pairs into x and y 
-        obj = [[self._convert_latlon_to_xy(pair[1], pair[0], mapWidth=final_width, mapHeight=final_height) for pair in shape] for shape in obj]
+        obj = [[self._convert_latlon_to_xy(pair[1], pair[0], mapWidth=final_width, mapHeight=final_height, move_south=move_south) for pair in shape] for shape in obj]
         if len(obj) > 1:
             return Polygon(obj[0], holes=obj[1:])
         else:
             return Polygon(obj[0])
 
-    def _process_features(self, features, get_color, final_width, final_height):
+    def _process_features(self, features, get_color, final_width, final_height, split_norway=False):
         svg_list = []
         min_x = None
         min_y = None
         max_x = None
         max_y = None
         for region_features in features:
-            region_multiPolygon = MultiPolygon(
-                [self._create_poly(obj, final_width, final_height) for obj in region_features['geometry']['coordinates']]
-            )
+            if split_norway and region_features['properties']['navn'] in self.northern_regions:
+                region_multiPolygon = MultiPolygon(
+                    [self._create_poly(obj, final_width, final_height, move_south=True) for obj in region_features['geometry']['coordinates']]
+                )
+            else:    
+                region_multiPolygon = MultiPolygon(
+                    [self._create_poly(obj, final_width, final_height) for obj in region_features['geometry']['coordinates']]
+                )
             svg_list.append(
                 self.stroke_width_pat.sub(
                     'stroke-width="0.025"',
@@ -124,7 +133,7 @@ class plotter_methods:
         width = max_x - min_x
         height = max_y - min_y
         return svg_list, min_x, min_y, width, height
-
+    
     def plot_kommune_regions(
         self, 
         output_svg_filepath, 
@@ -204,7 +213,8 @@ class plotter_methods:
         max_region_value=30, 
         default_color='#66cc99', 
         final_width='500', 
-        final_height='500'):
+        final_height='500',
+        split_norway=False):
 
         cmap = ColorMap(color_map_name, levels=color_map_levels)
         def get_color(region_name):
@@ -219,7 +229,8 @@ class plotter_methods:
             self.region_json['features'], 
             get_color,
             final_width,
-            final_height
+            final_height,
+            split_norway=split_norway
         )
         with open(output_svg_filepath, 'w') as open_f:
             open_f.write(
@@ -260,6 +271,17 @@ class plotter_methods:
                 )
             )
         )
+        self.northern_regions = json.load(
+            StringIO(
+                pkg_resources.read_text(
+                    mapping_data, 
+                    'northern_region.json'
+                )
+            )
+        )
+        self.northern_regions = self.northern_regions['northern_regions']
+        self.latitude_southern_adjustment = 2.75 # 3.2 these also work but top have is lower and further west
+        self.longitude_southern_adjustment = 10 # 12
         self.stroke_width_pat = re.compile('stroke-width=".*?"')
         self.head_bit = '''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{}" height="{}" viewBox="{} {} {} {}" preserveAspectRatio="xMinYMin meet">'''
         self.end_bit = '''</svg>'''
