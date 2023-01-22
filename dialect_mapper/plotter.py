@@ -1,11 +1,14 @@
 import json
 import matplotlib as mpl
 import matplotlib.colors as mpl_colors
+import os
 import re
 from shapely import Polygon, MultiPolygon
 
 import math
 from numpy import log as ln
+
+import cairosvg
 
 import sys
 if sys.version_info[0] < 3: 
@@ -133,6 +136,41 @@ class plotter_methods:
         width = max_x - min_x
         height = max_y - min_y
         return svg_list, min_x, min_y, width, height
+
+    def _save_output(
+        self,
+        output_path: str,
+        final_width: int,
+        final_height: int,
+        min_x: float,
+        min_y: float,
+        width: float,
+        height: float,
+        svg_list: list):
+        
+        output_png = False
+        if output_path[-4:] == ".png":
+            output_svg_filepath = output_path[:-4] + ".svg"
+            output_png = True
+        else:
+            output_svg_filepath = output_path
+        
+        with open(output_svg_filepath, 'w') as open_f:
+            open_f.write(
+                self.head_bit.format(
+                    str(final_width),
+                    str(final_height),
+                    min_x, 
+                    min_y, 
+                    width, 
+                    height ) + 
+                ''.join(svg_list) + 
+                self.end_bit
+            )
+        
+        if output_png:
+            cairosvg.svg2png(url=output_svg_filepath, write_to=output_path)
+            os.remove(output_svg_filepath)
     
     def plot_kommune_regions(
         self, 
@@ -152,18 +190,16 @@ class plotter_methods:
             else:
                 return default_color
         svg_list, min_x, min_y, width, height = self._process_features(self.kommuner_json['features'], get_color)
-        with open(output_svg_filepath, 'w') as open_f:
-            open_f.write(
-                self.head_bit.format(
-                    str(float(final_width)),
-                    str(float(final_height)),
-                    min_x, 
-                    min_y, 
-                    width, 
-                    height ) + 
-                ''.join(svg_list) + 
-                self.end_bit
-            )
+        self._save_output(
+            output_svg_filepath,
+            final_width, 
+            final_height,
+            min_x, 
+            min_y, 
+            width, 
+            height,
+            svg_list
+        )
 
     def plot_dialect_regions(
         self, 
@@ -191,18 +227,16 @@ class plotter_methods:
             final_width,
             final_height
         )
-        with open(output_svg_filepath, 'w') as open_f:
-            open_f.write(
-                self.head_bit.format(
-                    str(final_width),
-                    str(final_height),
-                    min_x, 
-                    min_y, 
-                    width, 
-                    height ) + 
-                ''.join(svg_list) + 
-                self.end_bit
-            )
+        self._save_output(
+            output_svg_filepath,
+            final_width, 
+            final_height,
+            min_x, 
+            min_y, 
+            width, 
+            height,
+            svg_list
+        )
 
     def plot_rundkast_regions(
         self, 
@@ -232,18 +266,16 @@ class plotter_methods:
             final_height,
             split_norway=split_norway
         )
-        with open(output_svg_filepath, 'w') as open_f:
-            open_f.write(
-                self.head_bit.format(
-                    str(final_width),
-                    str(final_height),
-                    min_x, 
-                    min_y, 
-                    width, 
-                    height ) + 
-                ''.join(svg_list) + 
-                self.end_bit
-            )
+        self._save_output(
+            output_svg_filepath,
+            final_width, 
+            final_height,
+            min_x, 
+            min_y, 
+            width, 
+            height,
+            svg_list
+        )
         
     def __init__(self) -> None:
         ### Original geoJSON data from https://github.com/robhop/fylker-og-kommuner-2020
