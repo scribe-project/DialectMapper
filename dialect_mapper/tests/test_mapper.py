@@ -228,5 +228,38 @@ class DialectMapperTests(unittest.TestCase):
             'Nordvestlandsk'
         )
 
+    def test_stortinget_mapper_corrections_fana(self):
+        mm = dialect_mapper.mapper_methods()
+        mm.enable_stortinget_corrections()
+        named_diaelct = mm.get_named_dialect('Fana')
+        self.assertEqual(
+            named_diaelct,
+            'Sørvestlandsk'
+        )
+
+    def test_cardinal_dialect_from_dia(self):
+        mm = dialect_mapper.mapper_methods()
+        card_dia = mm.get_cardinal_dialect('Sørlandsk')
+        self.assertEqual(
+            card_dia,
+            'south'
+        )
+
+    def test_cardinal_dialect_from_kommune(self):
+        mm = dialect_mapper.mapper_methods()
+        card_dia = mm.get_cardinal_dialect('Trondheim')
+        self.assertEqual(
+            card_dia,
+            'mid'
+        )
+    
+    def test_cardinal_dialect_from_badInput(self):
+        mm = dialect_mapper.mapper_methods()
+        card_dia = mm.get_cardinal_dialect('Seattle')
+        self.assertEqual(
+            card_dia,
+            None
+        )
+
 if __name__ == "__main__":
     unittest.main()

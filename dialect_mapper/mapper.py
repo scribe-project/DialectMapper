@@ -49,6 +49,32 @@ class mapper_methods:
             dialects = dialects[0]
         return dialects
 
+    # ----------------- CARDINAL dialect methods -----------------
+    def get_cardinal_dialect(self, input_str: str) -> str:
+        # we'll allow the input to either be a dialect region or a kommune/fylke
+        fine_to_cardinal = {
+            'Østlandsk' : 'east',
+            'Midlandsk' : 'east',
+            'Namdalsk' : 'mid',
+            'Østtrøndsk' : 'mid',
+            'Uttrøndersk' : 'mid',
+            'Trøndsk' : 'mid',
+            'Helgelandsk' : 'north',
+            'Nordlandsk' : 'north',
+            'Troms-Finnmarks-mål' : 'north',
+            'Sørlandsk' : 'south',
+            'Sørvestlandsk' : 'west',
+            'Nordvestlandsk': 'west'
+        }
+        if input_str in fine_to_cardinal:
+            return fine_to_cardinal[input_str]
+        else:
+            named_dialect = self.get_named_dialect(input_str)
+            if named_dialect and named_dialect in fine_to_cardinal:
+                return fine_to_cardinal[named_dialect]
+            else:
+                return None
+
     # ----------------- NAMED dialect methods -----------------
     def get_old_municipalities_from_named_dialect(self, named_dialect: str) -> list:
         return sorted(list(set([x[0] for x in self.raw_csv_data if x[4].lower().strip() == named_dialect.lower().strip()])))
@@ -65,6 +91,8 @@ class mapper_methods:
             old_municipality = self._get_nbtale_correction(old_municipality)
         if self.use_npsc_corrections:
             old_municipality = self._get_npsc_correction(old_municipality)
+        if self.use_stortinget_corrections:
+            old_municipality = self._get_stortinget_correction(old_municipality)
         # if old_municipality is not a Norwegian muni then it will be none
         # which causes problems b/c in the csv data old_muni being empty means there isn't an old muni corresponding to the new muni
         # thus we want to ignore old_munis being none instead of returning all the new munis w/o an old 
@@ -77,6 +105,8 @@ class mapper_methods:
             new_municipality = self._get_nbtale_correction(new_municipality)
         if self.use_npsc_corrections:
             new_municipality = self._get_npsc_correction(new_municipality)
+        if self.use_stortinget_corrections:
+            new_municipality = self._get_stortinget_correction(new_municipality)
         return sorted(list(set([x[4] for x in self.raw_csv_data if x[1].lower().strip() == new_municipality])))
     def get_named_dialect_by_old_county(self, old_county) -> list:
         return sorted(list(set([x[4] for x in self.raw_csv_data if x[2].lower().strip() == old_county.lower().strip()])))
@@ -166,6 +196,8 @@ class mapper_methods:
             old_municipality = self._get_nbtale_correction(old_municipality)
         if self.use_npsc_corrections:
             old_municipality = self._get_npsc_correction(old_municipality)
+        if self.use_stortinget_corrections:
+            old_municipality = self._get_stortinget_correction(old_municipality)
         # if old_municipality is not a Norwegian muni then it will be none
         # which causes problems b/c in the csv data old_muni being empty means there isn't an old muni corresponding to the new muni
         # thus we want to ignore old_munis being none instead of returning all the new munis w/o an old 
@@ -178,6 +210,8 @@ class mapper_methods:
             new_municipality = self._get_nbtale_correction(new_municipality)
         if self.use_npsc_corrections:
             new_municipality = self._get_npsc_correction(new_municipality)
+        if self.use_stortinget_corrections:
+            new_municipality = self._get_stortinget_correction(new_municipality)
         return sorted(list(set([x[5] for x in self.raw_csv_data if x[1].lower().strip() == new_municipality])))
     def get_numeric_dialect_by_old_county(self, old_county) -> list:
         return sorted(list(set([x[5] for x in self.raw_csv_data if x[2].lower().strip() == old_county.lower().strip()])))
@@ -254,6 +288,22 @@ class mapper_methods:
         for row in cReader:
             self.npsc_corrections[row[0]] = row[1]
 
+    def enable_stortinget_corrections(self) -> None:
+        # There are some birth_kommunes from the Stortinget API that are either cities/towns instead of kommunes or have a typo ("opdal" looking at you)
+        # this method will switch the flag so later queries use the corrected mapping and load the mapping data
+        # NOTE: this will only correct the input. Presumably the resource table has the correct names
+        self.use_stortinget_corrections = True
+        cReader = csv.reader(
+            StringIO(
+                pkg_resources.read_text(
+                    mapping_data, 
+                    'stortinget_transform.csv'
+                )
+            )
+        )
+        for row in cReader:
+            self.stortinget_corrections[row[0]] = row[1]
+
     def _get_nbtale_correction(self, lookup_by: str) -> str:
         if lookup_by in self.nbtale_corrections:
             lookup_by = self.nbtale_corrections[lookup_by]
@@ -262,6 +312,11 @@ class mapper_methods:
     def _get_npsc_correction(self, lookup_by: str) -> str:
         if lookup_by in self.npsc_corrections:
             lookup_by = self.npsc_corrections[lookup_by]
+        return lookup_by
+    
+    def _get_stortinget_correction(self, lookup_by: str) -> str:
+        if lookup_by in self.stortinget_corrections:
+            lookup_by = self.stortinget_corrections[lookup_by]
         return lookup_by
 
     def enable_fine_grained_dialect_collapse(self):
@@ -280,10 +335,12 @@ class mapper_methods:
     def __init__(self) -> None:
         self.use_nbtale_corrections = False
         self.use_npsc_corrections = False
+        self.use_stortinget_corrections = False
         self.raw_csv_data = []
         self.nbtale_corrections = {}
         self.nbtale_speakers_to_named_dialects = {}
         self.npsc_corrections = {}
+        self.stortinget_corrections = {}
         self.collapse_fine_grained_dialects = False
 
         cReader = csv.reader(
