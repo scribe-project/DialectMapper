@@ -16,11 +16,14 @@ except ImportError:
 
 from . import mapping_data
 
+from collections import namedtuple
+
 # A bunch of methods that makes querying dialectal relationships easier
 # Code created by Phoebe Parsons on Jan 14 2022
 # the CSV file was created by Phoebe Parsons via reading dialectal maps,
 # scraping Wikipedia, and manual correction (with feedback from Per Erik Solberg)
 
+## EDIT: screw it, we're using Pandas 
 # Many of these methods could be improved via the use of Pandas. But, I 
 # didn't want to force any other potential users to install Pandas as well
 
@@ -77,41 +80,35 @@ class mapper_methods:
 
     # ----------------- NAMED dialect methods -----------------
     def get_old_municipalities_from_named_dialect(self, named_dialect: str) -> list:
-        return sorted(list(set([x[0] for x in self.raw_csv_data if x[4].lower().strip() == named_dialect.lower().strip()])))
+        return sorted(list(set([x.old_muni for x in self.csv_tuples if x.named_dialect.lower().strip() == named_dialect.lower().strip()])))
     def get_new_municipalities_from_named_dialect(self, named_dialect: str) -> list:
-        return sorted(list(set([x[1] for x in self.raw_csv_data if x[4].lower().strip() == named_dialect.lower().strip()])))
+        return sorted(list(set([x.new_muni for x in self.csv_tuples if x.named_dialect.lower().strip() == named_dialect.lower().strip()])))
     def get_old_counties_from_named_dialect(self, named_dialect: str) -> list:
-        return sorted(list(set([x[2] for x in self.raw_csv_data if x[4].lower().strip() == named_dialect.lower().strip()])))
+        return sorted(list(set([x.old_county for x in self.csv_tuples if x.named_dialect.lower().strip() == named_dialect.lower().strip()])))
     def get_new_counties_from_named_dialect(self, named_dialect: str) -> list:
-        return sorted(list(set([x[3] for x in self.raw_csv_data if x[4].lower().strip() == named_dialect.lower().strip()])))
+        return sorted(list(set([x.new_county for x in self.csv_tuples if x.named_dialect.lower().strip() == named_dialect.lower().strip()])))
+    def get_new_counties_2024_from_named_dialect(self, named_dialect: str) -> list:
+        return sorted(list(set([x.new_county_2024 for x in self.csv_tuples if x.named_dialect.lower().strip() == named_dialect.lower().strip()])))
 
     def get_named_dialect_by_old_municipality(self, old_municipality) -> list:
         old_municipality = old_municipality.lower().strip()
-        if self.use_nbtale_corrections:
-            old_municipality = self._get_nbtale_correction(old_municipality)
-        if self.use_npsc_corrections:
-            old_municipality = self._get_npsc_correction(old_municipality)
-        if self.use_stortinget_corrections:
-            old_municipality = self._get_stortinget_correction(old_municipality)
+        old_municipality = self._get_corrections(old_municipality)
         # if old_municipality is not a Norwegian muni then it will be none
         # which causes problems b/c in the csv data old_muni being empty means there isn't an old muni corresponding to the new muni
         # thus we want to ignore old_munis being none instead of returning all the new munis w/o an old 
         if old_municipality == '':
             return []
-        return sorted(list(set([x[4] for x in self.raw_csv_data if x[0].lower().strip() == old_municipality])))
+        return sorted(list(set([x.named_dialect for x in self.csv_tuples if x.old_muni.lower().strip() == old_municipality])))
     def get_named_dialect_by_new_municipality(self, new_municipality) -> list:
         new_municipality = new_municipality.lower().strip()
-        if self.use_nbtale_corrections:
-            new_municipality = self._get_nbtale_correction(new_municipality)
-        if self.use_npsc_corrections:
-            new_municipality = self._get_npsc_correction(new_municipality)
-        if self.use_stortinget_corrections:
-            new_municipality = self._get_stortinget_correction(new_municipality)
-        return sorted(list(set([x[4] for x in self.raw_csv_data if x[1].lower().strip() == new_municipality])))
+        new_municipality = self._get_corrections(new_municipality)
+        return sorted(list(set([x.named_dialect for x in self.csv_tuples if x.new_muni.lower().strip() == new_municipality])))
     def get_named_dialect_by_old_county(self, old_county) -> list:
-        return sorted(list(set([x[4] for x in self.raw_csv_data if x[2].lower().strip() == old_county.lower().strip()])))
+        return sorted(list(set([x.named_dialect for x in self.csv_tuples if x.old_county.lower().strip() == old_county.lower().strip()])))
     def get_named_dialect_by_new_county(self, new_county) -> list:
-        return sorted(list(set([x[4] for x in self.raw_csv_data if x[3].lower().strip() == new_county.lower().strip()])))
+        return sorted(list(set([x.named_dialect for x in self.csv_tuples if x.new_county.lower().strip() == new_county.lower().strip()])))
+    def get_named_dialect_by_new_county_2024(self, new_county) -> list:
+        return sorted(list(set([x.named_dialect for x in self.csv_tuples if x.new_county_2024.lower().strip() == new_county.lower().strip()])))
     
     def get_named_dialect(self, lookup_by: str, resolve_ambigious='new'):
         if self.is_ambiguious_municipality(lookup_by):
@@ -145,8 +142,12 @@ class mapper_methods:
                     if len(dialects) > 0:
                         return self.format_dialect_response(dialects)
                     else:
-                        print("ERROR: cannot find named dialect for: {}".format(lookup_by))
-                        return None
+                        dialects = self.get_named_dialect_by_new_county_2024(lookup_by)
+                        if len(dialects) > 0:
+                            return self.format_dialect_response(dialects)
+                        else:
+                            print("ERROR: cannot find named dialect for: {}".format(lookup_by))
+                            return None
 
     def get_nbtale_named_dialect_from_id(self, speaker_id: str):
         """ Manual work was done to create a speaker ID to dialect mapping for NB Tale speakers
@@ -181,42 +182,34 @@ class mapper_methods:
         return ''
 
     # ----------------- NUMERIC dialect methods -----------------
-    def get_old_municipalities_from_numeric_dialect(self, named_dialect: str) -> list:
-        return sorted(list(set([x[0] for x in self.raw_csv_data if int(x[5]) == int(named_dialect)])))
-    def get_new_municipalities_from_numeric_dialect(self, named_dialect: str) -> list:
-        return sorted(list(set([x[1] for x in self.raw_csv_data if int(x[5]) == int(named_dialect)])))
-    def get_old_counties_from_numeric_dialect(self, named_dialect: str) -> list:
-        return sorted(list(set([x[2] for x in self.raw_csv_data if int(x[5]) == int(named_dialect)])))
-    def get_new_counties_from_numeric_dialect(self, named_dialect: str) -> list:
-        return sorted(list(set([x[3] for x in self.raw_csv_data if int(x[5]) == int(named_dialect)])))
+    def get_old_municipalities_from_numeric_dialect(self, numeric_dialect: str) -> list:
+        return sorted(list(set([x.old_muni for x in self.csv_tuples if int(x.numeric_dialect) == int(numeric_dialect)])))
+    def get_new_municipalities_from_numeric_dialect(self, numeric_dialect: str) -> list:
+        return sorted(list(set([x.new_muni for x in self.csv_tuples if int(x.numeric_dialect) == int(numeric_dialect)])))
+    def get_old_counties_from_numeric_dialect(self, numeric_dialect: str) -> list:
+        return sorted(list(set([x.old_county for x in self.csv_tuples if int(x.numeric_dialect) == int(numeric_dialect)])))
+    def get_new_counties_from_numeric_dialect(self, numeric_dialect: str) -> list:
+        return sorted(list(set([x.new_county for x in self.csv_tuples if int(x.numeric_dialect) == int(numeric_dialect)])))
 
     def get_numeric_dialect_by_old_municipality(self, old_municipality) -> list:
         old_municipality = old_municipality.lower().strip()
-        if self.use_nbtale_corrections:
-            old_municipality = self._get_nbtale_correction(old_municipality)
-        if self.use_npsc_corrections:
-            old_municipality = self._get_npsc_correction(old_municipality)
-        if self.use_stortinget_corrections:
-            old_municipality = self._get_stortinget_correction(old_municipality)
+        old_municipality = self._get_corrections(old_municipality)
         # if old_municipality is not a Norwegian muni then it will be none
         # which causes problems b/c in the csv data old_muni being empty means there isn't an old muni corresponding to the new muni
         # thus we want to ignore old_munis being none instead of returning all the new munis w/o an old 
         if old_municipality == '':
             return []
-        return sorted(list(set([x[5] for x in self.raw_csv_data if x[0].lower().strip() == old_municipality])))
+        return sorted(list(set([x.numeric_dialect for x in self.csv_tuples if x.old_muni.lower().strip() == old_municipality])))
     def get_numeric_dialect_by_new_municipality(self, new_municipality) -> list:
         new_municipality = new_municipality.lower().strip()
-        if self.use_nbtale_corrections:
-            new_municipality = self._get_nbtale_correction(new_municipality)
-        if self.use_npsc_corrections:
-            new_municipality = self._get_npsc_correction(new_municipality)
-        if self.use_stortinget_corrections:
-            new_municipality = self._get_stortinget_correction(new_municipality)
-        return sorted(list(set([x[5] for x in self.raw_csv_data if x[1].lower().strip() == new_municipality])))
+        new_municipality = self._get_corrections(new_municipality)
+        return sorted(list(set([x.numeric_dialect for x in self.csv_tuples if x.new_muni.lower().strip() == new_municipality])))
     def get_numeric_dialect_by_old_county(self, old_county) -> list:
-        return sorted(list(set([x[5] for x in self.raw_csv_data if x[2].lower().strip() == old_county.lower().strip()])))
+        return sorted(list(set([x.numeric_dialect for x in self.csv_tuples if x.old_county.lower().strip() == old_county.lower().strip()])))
     def get_numeric_dialect_by_new_county(self, new_county) -> list:
-        return sorted(list(set([x[5] for x in self.raw_csv_data if x[3].lower().strip() == new_county.lower().strip()])))
+        return sorted(list(set([x.numeric_dialect for x in self.csv_tuples if x.new_county.lower().strip() == new_county.lower().strip()])))
+    def get_numeric_dialect_by_new_county_2024(self, new_county) -> list:
+        return sorted(list(set([x.numeric_dialect for x in self.csv_tuples if x.new_county_2024.lower().strip() == new_county.lower().strip()])))
     
     def get_numeric_dialect(self, lookup_by: str, resolve_ambigious='new'):
         if self.is_ambiguious_municipality(lookup_by):
@@ -250,8 +243,12 @@ class mapper_methods:
                     if len(dialects) > 0:
                         return self.format_dialect_response(dialects)
                     else:
-                        print("ERROR: cannot find numeric dialect for: {}".format(lookup_by))
-                        return None
+                        dialects = self.get_numeric_dialect_by_new_county_2024(lookup_by)
+                        if len(dialects) > 0:
+                            return self.format_dialect_response(dialects)
+                        else:
+                            print("ERROR: cannot find numeric dialect for: {}".format(lookup_by))
+                            return None
 
     def enable_nbtale_corrections(self, ignore_herøy=True) -> None:
         # NBTale has some human errors in the kommune names. I've created a mapping from the NB Tale names to what they should be
@@ -318,6 +315,15 @@ class mapper_methods:
         if lookup_by in self.stortinget_corrections:
             lookup_by = self.stortinget_corrections[lookup_by]
         return lookup_by
+    
+    def _get_corrections(self, lookup_by: str) -> str:
+        if self.use_nbtale_corrections:
+            lookup_by = self._get_nbtale_correction(lookup_by)
+        if self.use_npsc_corrections:
+            lookup_by = self._get_npsc_correction(lookup_by)
+        if self.use_stortinget_corrections:
+            lookup_by = self._get_stortinget_correction(lookup_by)
+        return lookup_by
 
     def enable_fine_grained_dialect_collapse(self):
         self.collapse_fine_grained_dialects = True
@@ -353,4 +359,6 @@ class mapper_methods:
         )
         for row in cReader:
             self.raw_csv_data.append(row)
-        self.raw_csv_data.pop(0)
+        headers = self.raw_csv_data.pop(0)
+        csv_row_tuple = namedtuple('csv_row_tuple', headers)
+        self.csv_tuples = [csv_row_tuple(*row) for row in self.raw_csv_data]
