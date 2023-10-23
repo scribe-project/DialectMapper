@@ -1,590 +1,590 @@
-old_muni,new_muni,old_county,new_county,named_dialect,numeric_dialect,new_county_2024
-Risør,Risør,Aust-Agder,Agder,Sørlandsk,20,Agder
-Grimstad,Grimstad,Aust-Agder,Agder,Sørlandsk,20,Agder
-Arendal,Arendal,Aust-Agder,Agder,Sørlandsk,20,Agder
-Kristiansand,Kristiansand,Vest-Agder,Agder,Sørlandsk,19,Agder
-Songdalen,Kristiansand,Vest-Agder,Agder,Sørlandsk,19,Agder
-Søgne,Kristiansand,Vest-Agder,Agder,Sørlandsk,19,Agder
-Mandal,Lindesnes,Vest-Agder,Agder,Sørlandsk,19,Agder
-Marnardal,Lindesnes,Vest-Agder,Agder,Sørlandsk,19,Agder
-Lindesnes,Lindesnes,Vest-Agder,Agder,Sørlandsk,19,Agder
-Farsund,Farsund,Vest-Agder,Agder,Sørvestlandsk,19,Agder
-Flekkefjord,Flekkefjord,Vest-Agder,Agder,Sørvestlandsk,19,Agder
-Gjerstad,Gjerstad,Aust-Agder,Agder,Sørlandsk,20,Agder
-Vegårshei,Vegårshei,Aust-Agder,Agder,Sørlandsk,20,Agder
-Tvedestrand,Tvedestrand,Aust-Agder,Agder,Sørlandsk,20,Agder
-Froland,Froland,Aust-Agder,Agder,Sørlandsk,20,Agder
-Lillesand,Lillesand,Aust-Agder,Agder,Sørlandsk,20,Agder
-Birkenes,Birkenes,Aust-Agder,Agder,Sørlandsk,20,Agder
-Åmli,Åmli,Aust-Agder,Agder,Sørlandsk,20,Agder
-Iveland,Iveland,Aust-Agder,Agder,Sørlandsk,20,Agder
-Evje og Hornnes,Evje og Hornnes,Aust-Agder,Agder,Sørlandsk,20,Agder
-Bygland,Bygland,Aust-Agder,Agder,Sørlandsk,20,Agder
-Valle,Valle,Aust-Agder,Agder,Sørlandsk,20,Agder
-Bykle,Bykle,Aust-Agder,Agder,Sørlandsk,20,Agder
-Vennesla,Vennesla,Vest-Agder,Agder,Sørlandsk,19,Agder
-Åseral,Åseral,Vest-Agder,Agder,Sørvestlandsk,19,Agder
-Audnedal,Lyngdal,Vest-Agder,Agder,Sørvestlandsk,19,Agder
-Lyngdal,Lyngdal,Vest-Agder,Agder,Sørvestlandsk,19,Agder
-Hægebostad,Hægebostad,Vest-Agder,Agder,Sørvestlandsk,19,Agder
-Kvinesdal,Kvinesdal,Vest-Agder,Agder,Sørvestlandsk,19,Agder
-Sirdal,Sirdal,Vest-Agder,Agder,Sørvestlandsk,19,Agder
-Alvdal,Alvdal,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Dovre,Dovre,Oppland,Innlandet,Midlandsk,21,Innlandet
-Eidskog,Eidskog,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Elverum,Elverum,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Engerdal,Engerdal,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Etnedal,Etnedal,Oppland,Innlandet,Midlandsk,21,Innlandet
-Folldal,Folldal,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Gausdal,Gausdal,Oppland,Innlandet,Midlandsk,21,Innlandet
-Gjøvik,Gjøvik,Oppland,Innlandet,Østlandsk,21,Innlandet
-Gran,Gran,Oppland,Innlandet,Østlandsk,21,Innlandet
-Grue,Grue,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Hamar,Hamar,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Kongsvinger,Kongsvinger,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Lesja,Lesja,Oppland,Innlandet,Midlandsk,21,Innlandet
-Lillehammer,Lillehammer,Oppland,Innlandet,Østlandsk,21,Innlandet
-Lom,Lom,Oppland,Innlandet,Midlandsk,21,Innlandet
-Løten,Løten,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Nord-Aurdal,Nord-Aurdal,Oppland,Innlandet,Midlandsk,21,Innlandet
-Nord-Fron,Nord-Fron,Oppland,Innlandet,Midlandsk,21,Innlandet
-Nord-Odal,Nord-Odal,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Nordre Land,Nordre Land,Oppland,Innlandet,Østlandsk,21,Innlandet
-Os,Os,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Rendalen,Rendalen,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Ringebu,Ringebu,Oppland,Innlandet,Midlandsk,21,Innlandet
-Ringsaker,Ringsaker,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Sel,Sel,Oppland,Innlandet,Midlandsk,21,Innlandet
-Skjåk,Skjåk,Oppland,Innlandet,Midlandsk,21,Innlandet
-Stange,Stange,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Stor-Elvdal,Stor-Elvdal,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Søndre Land,Søndre Land,Oppland,Innlandet,Østlandsk,21,Innlandet
-Sør-Aurdal,Sør-Aurdal,Oppland,Innlandet,Midlandsk,21,Innlandet
-Sør-Fron,Sør-Fron,Oppland,Innlandet,Midlandsk,21,Innlandet
-Sør-Odal,Sør-Odal,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Tolga,Tolga,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Trysil,Trysil,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Tynset,Tynset,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Vang,Vang,Oppland,Innlandet,Midlandsk,21,Innlandet
-Vestre Slidre,Vestre Slidre,Oppland,Innlandet,Midlandsk,21,Innlandet
-Vestre Toten,Vestre Toten,Oppland,Innlandet,Østlandsk,21,Innlandet
-Vågå,Vågå,Oppland,Innlandet,Midlandsk,21,Innlandet
-Våler,Våler,Hedmark,Innlandet,Østlandsk,21,Østfold
-Østre Toten,Østre Toten,Oppland,Innlandet,Østlandsk,21,Innlandet
-Øyer,Øyer,Oppland,Innlandet,Midlandsk,21,Innlandet
-Øystre Slidre,Øystre Slidre,Oppland,Innlandet,Midlandsk,21,Innlandet
-Åmot,Åmot,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Åsnes,Åsnes,Hedmark,Innlandet,Østlandsk,21,Innlandet
-Bremsnes,Kristiansund,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Grip,Kristiansund,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Frei,Kristiansund,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-,Kristiansund,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Eresfjord og Vistdal,Molde,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Nesset,Molde,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Bolsøy,Molde,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Midsund,Molde,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Sør-Aukra,Molde,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-,Molde,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Ørskog,Ålesund,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Skodje,Ålesund,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Vatne,Ålesund,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Borgund,Ålesund,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Haram,Ålesund,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Sandøy,Ålesund,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Ålesund,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Syvde,Vanylven,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Rovde,Vanylven,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Vanylven,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Rovde,Sande,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Sande,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Herøy,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Ulstein,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Hareid,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Vartdal,Ørsta,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Hjørundfjord,Ørsta,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Ørsta,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Sunnylven,Stranda,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Stranda,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Sykkylven,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Sula,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Vigra,Giske,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Giske,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Tresfjord,Vestnes,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Vestnes,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Voll,Rauma,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Eid og Voll,Rauma,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Eid,Rauma,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Grytten,Rauma,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Hen,Rauma,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Veøy,Rauma,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-,Rauma,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Sandøy,Aukra,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Aukra,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Kornstad,Averøy,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Kvernes,Averøy,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Bremsnes,Averøy,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-,Averøy,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Kvernes,Gjemnes,,Møre og Romsdal,Nordvestlandsk,8,Møre og Romsdal
-Øre,Gjemnes,,Møre og Romsdal,Nordvestlandsk,8,Møre og Romsdal
-,Gjemnes,,Møre og Romsdal,Nordvestlandsk,8,Møre og Romsdal
-Straumsnes,Tingvoll,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Stangvik,Tingvoll,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-,Tingvoll,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Øksendal,Sunndal,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Ålvundeid,Sunndal,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Stangvik,Sunndal,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-,Sunndal,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Stangvik,Surnadal,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Åsskard,Surnadal,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-,Surnadal,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Edøy,Smøla,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Brattvær,Smøla,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Hopen,Smøla,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-,Smøla,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Stemshaug,Aure,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Valsøyfjord,Aure,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Tustna,Aure,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-,Aure,,Møre og Romsdal,Uttrøndersk,8,Møre og Romsdal
-Hornindal,Volda,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Dalsfjord,Volda,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Volda,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Norddal,Fjord,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Stordal,Fjord,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-,Fjord,,Møre og Romsdal,Nordvestlandsk,12,Møre og Romsdal
-Fræna,Hustadvika,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Bud,Hustadvika,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Hustad,Hustadvika,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Eide,Hustadvika,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-,Hustadvika,,Møre og Romsdal,Nordvestlandsk,11,Møre og Romsdal
-Skjerstad,Bodø,,Nordland,Nordlandsk,5,Nordland
-Bodin,Bodø,,Nordland,Nordlandsk,5,Nordland
-Kjerringøy,Bodø,,Nordland,Nordlandsk,5,Nordland
-Nordfold-Kjerringøy,Bodø,,Nordland,Nordlandsk,5,Nordland
-,Bodø,,Nordland,Nordlandsk,5,Nordland
-Narvik,Narvik,,Nordland,Nordlandsk,4,Nordland
-Tysfjord,Narvik,,Nordland,Nordlandsk,4,Nordland
-Ofoten,Narvik,,Nordland,Nordlandsk,4,Nordland
-Ballangen,Narvik,,Nordland,Nordlandsk,4,Nordland
-Ankenes,Narvik,,Nordland,Nordlandsk,4,Nordland
-,Bindal,,Nordland,Helgelandsk,8,Nordland
-,Sømna,,Nordland,Helgelandsk,7,Nordland
-Brønnøysund,Brønnøy,,Nordland,Helgelandsk,7,Nordland
-Velfjord,Brønnøy,,Nordland,Helgelandsk,7,Nordland
-Brønnøy,Brønnøy,,Nordland,Helgelandsk,7,Nordland
-Tjøtta,Vega,,Nordland,Helgelandsk,7,Nordland
-,Vega,,Nordland,Helgelandsk,7,Nordland
-,Vevelstad,,Nordland,Helgelandsk,7,Nordland
-,Herøy,,Nordland,Helgelandsk,7,Nordland
-Stamnes,Alstahaug,,Nordland,Helgelandsk,7,Nordland
-Tjøtta,Alstahaug,,Nordland,Helgelandsk,7,Nordland
-,Alstahaug,,Nordland,Helgelandsk,7,Nordland
-Stamnes,Leirfjord,,Nordland,Helgelandsk,7,Nordland
-Tjøtta,Leirfjord,,Nordland,Helgelandsk,7,Nordland
-,Leirfjord,,Nordland,Helgelandsk,7,Nordland
-Mosjøen,Vefsn,,Nordland,Helgelandsk,7,Nordland
-Drevja,Vefsn,,Nordland,Helgelandsk,7,Nordland
-Elsfjord,Vefsn,,Nordland,Helgelandsk,7,Nordland
-,Vefsn,,Nordland,Helgelandsk,7,Nordland
-,Grane,,Nordland,Helgelandsk,7,Nordland
-,Hattfjelldal,,Nordland,Helgelandsk,7,Nordland
-Nordvik,Dønna,,Nordland,Helgelandsk,6,Nordland
-Dønnes,Dønna,,Nordland,Helgelandsk,6,Nordland
-,Dønna,,Nordland,Helgelandsk,6,Nordland
-,Nesna,,Nordland,Helgelandsk,6,Nordland
-Korgen,Hemnes,,Nordland,Helgelandsk,6,Nordland
-Sør-Rana,Hemnes,,Nordland,Helgelandsk,6,Nordland
-,Hemnes,,Nordland,Helgelandsk,6,Nordland
-Mo i Rana,Rana,,Nordland,Helgelandsk,6,Nordland
-Nesna,Rana,,Nordland,Helgelandsk,6,Nordland
-Sør-Rana,Rana,,Nordland,Helgelandsk,6,Nordland
-Nord-Rana,Rana,,Nordland,Helgelandsk,6,Nordland
-,Rana,,Nordland,Helgelandsk,6,Nordland
-,Lurøy,,Nordland,Helgelandsk,6,Nordland
-,Træna,,Nordland,Helgelandsk,6,Nordland
-,Rødøy,,Nordland,Helgelandsk,6,Nordland
-,Meløy,,Nordland,Helgelandsk,6,Nordland
-,Gildeskål,,Nordland,Nordlandsk,5,Nordland
-,Beiarn,,Nordland,Nordlandsk,5,Nordland
-,Saltdal,,Nordland,Nordlandsk,5,Nordland
-,Fauske,,Nordland,Nordlandsk,5,Nordland
-Folden,Sørfold,,Nordland,Nordlandsk,5,Nordland
-Nordfold,Sørfold,,Nordland,Nordlandsk,5,Nordland
-Nordfold-Kjerringøy,Sørfold,,Nordland,Nordlandsk,5,Nordland
-,Sørfold,,Nordland,Nordlandsk,5,Nordland
-Nordfold,Steigen,,Nordland,Nordlandsk,5,Nordland
-Nordfold-Kjerringøy,Steigen,,Nordland,Nordlandsk,5,Nordland
-Leiranger,Steigen,,Nordland,Nordlandsk,5,Nordland
-,Steigen,,Nordland,Nordlandsk,5,Nordland
-,Lødingen,,Nordland,Nordlandsk,4,Nordland
-Ofoten,Evenes,,Nordland,Nordlandsk,4,Nordland
-,Evenes,,Nordland,Nordlandsk,4,Nordland
-,Røst,,Nordland,Nordlandsk,5,Nordland
-,Værøy,,Nordland,Nordlandsk,5,Nordland
-Moskenes,Flakstad,,Nordland,Nordlandsk,5,Nordland
-,Flakstad,,Nordland,Nordlandsk,5,Nordland
-Buksnes,Vestvågøy,,Nordland,Nordlandsk,5,Nordland
-Hol,Vestvågøy,,Nordland,Nordlandsk,5,Nordland
-Borge,Vestvågøy,,Nordland,Nordlandsk,5,Nordland
-Valberg,Vestvågøy,,Nordland,Nordlandsk,5,Nordland
-,Vestvågøy,,Nordland,Nordlandsk,5,Nordland
-Svolvær,Vågan,,Nordland,Nordlandsk,5,Nordland
-Gimsøy,Vågan,,Nordland,Nordlandsk,5,Nordland
-,Vågan,,Nordland,Nordlandsk,5,Nordland
-,Hadsel,,Nordland,Nordlandsk,5,Nordland
-,Bø,,Nordland,Nordlandsk,4,Nordland
-Langenes,Øksnes,,Nordland,Nordlandsk,4,Nordland
-,Øksnes,,Nordland,Nordlandsk,4,Nordland
-,Sortland,,Nordland,Nordlandsk,4,Nordland
-Bjørnskinn,Andøy,,Nordland,Nordlandsk,4,Nordland
-Dverberg,Andøy,,Nordland,Nordlandsk,4,Nordland
-Andenes,Andøy,,Nordland,Nordlandsk,4,Nordland
-,Andøy,,Nordland,Nordlandsk,4,Nordland
-Moskenes,Moskenes,,Nordland,Nordlandsk,5,Nordland
-Hamarøy,Hamarøy,,Nordland,Nordlandsk,5,Nordland
-Tysfjord,Hamarøy,,Nordland,Nordlandsk,4,Nordland
-Oslo,Oslo,Oslo,Oslo,Østlandsk,22,Oslo
-Egersund,Eigersund,,Rogaland,Sørvestlandsk,18,Rogaland
-Heskestad,Eigersund,,Rogaland,Sørvestlandsk,18,Rogaland
-Helleland,Eigersund,,Rogaland,Sørvestlandsk,18,Rogaland
-,Eigersund,,Rogaland,Sørvestlandsk,18,Rogaland
-Håland,Stavanger,,Rogaland,Sørvestlandsk,18,Rogaland
-Madla,Stavanger,,Rogaland,Sørvestlandsk,18,Rogaland
-Hetland,Stavanger,,Rogaland,Sørvestlandsk,18,Rogaland
-Fister,Stavanger,,Rogaland,Sørvestlandsk,18,Rogaland
-Hjelmeland og Fister,Stavanger,,Rogaland,Sørvestlandsk,18,Rogaland
-Sjernarøy,Stavanger,,Rogaland,Sørvestlandsk,18,Rogaland
-Finnøy,Stavanger,,Rogaland,Sørvestlandsk,18,Rogaland
-Rennesøy,Stavanger,,Rogaland,Sørvestlandsk,18,Rogaland
-,Stavanger,,Rogaland,Sørvestlandsk,18,Rogaland
-Torvastad,Haugesund,,Rogaland,Sørvestlandsk,18,Rogaland
-Skåre,Haugesund,,Rogaland,Sørvestlandsk,18,Rogaland
-,Haugesund,,Rogaland,Sørvestlandsk,18,Rogaland
-Høyland,Sandnes,,Rogaland,Sørvestlandsk,18,Rogaland
-Hetland,Sandnes,,Rogaland,Sørvestlandsk,18,Rogaland
-Høle,Sandnes,,Rogaland,Sørvestlandsk,18,Rogaland
-Forsand,Sandnes,,Rogaland,Sørvestlandsk,18,Rogaland
-,Sandnes,,Rogaland,Sørvestlandsk,18,Rogaland
-Sogndal,Sokndal,,Rogaland,Sørvestlandsk,18,Rogaland
-,Sokndal,,Rogaland,Sørvestlandsk,18,Rogaland
-Heskestad,Lund,,Rogaland,Sørvestlandsk,18,Rogaland
-,Lund,,Rogaland,Sørvestlandsk,18,Rogaland
-,Bjerkreim,,Rogaland,Sørvestlandsk,18,Rogaland
-Ogna,Hå,,Rogaland,Sørvestlandsk,18,Rogaland
-Varhaug,Hå,,Rogaland,Sørvestlandsk,18,Rogaland
-Nærbø,Hå,,Rogaland,Sørvestlandsk,18,Rogaland
-,Hå,,Rogaland,Sørvestlandsk,18,Rogaland
-,Klepp,,Rogaland,Sørvestlandsk,18,Rogaland
-,Time,,Rogaland,Sørvestlandsk,18,Rogaland
-Høle,Gjesdal,,Rogaland,Sørvestlandsk,18,Rogaland
-,Gjesdal,,Rogaland,Sørvestlandsk,18,Rogaland
-Håland,Sola,,Rogaland,Sørvestlandsk,18,Rogaland
-,Sola,,Rogaland,Sørvestlandsk,18,Rogaland
-,Randaberg,,Rogaland,Sørvestlandsk,18,Rogaland
-Forsand,Strand,,Rogaland,Sørvestlandsk,18,Rogaland
-,Strand,,Rogaland,Sørvestlandsk,18,Rogaland
-Årdal,Hjelmeland,,Rogaland,Sørvestlandsk,18,Rogaland
-Fister,Hjelmeland,,Rogaland,Sørvestlandsk,18,Rogaland
-Hjelmeland og Fister,Hjelmeland,,Rogaland,Sørvestlandsk,18,Rogaland
-,Hjelmeland,,Rogaland,Sørvestlandsk,18,Rogaland
-Sand,Suldal,,Rogaland,Sørvestlandsk,18,Rogaland
-Erfjord,Suldal,,Rogaland,Sørvestlandsk,18,Rogaland
-Jelsa,Suldal,,Rogaland,Sørvestlandsk,18,Rogaland
-Imsland,Suldal,,Rogaland,Sørvestlandsk,18,Rogaland
-,Suldal,,Rogaland,Sørvestlandsk,18,Rogaland
-,Sauda,,Rogaland,Sørvestlandsk,18,Rogaland
-,Kvitsøy,,Rogaland,Sørvestlandsk,18,Rogaland
-,Bokn,,Rogaland,Sørvestlandsk,18,Rogaland
-Nedstrand,Tysvær,,Rogaland,Sørvestlandsk,18,Rogaland
-Avaldsnes,Tysvær,,Rogaland,Sørvestlandsk,18,Rogaland
-Skjold,Tysvær,,Rogaland,Sørvestlandsk,18,Rogaland
-,Tysvær,,Rogaland,Sørvestlandsk,18,Rogaland
-Skudeneshavn,Karmøy,,Rogaland,Sørvestlandsk,18,Rogaland
-Kopervik,Karmøy,,Rogaland,Sørvestlandsk,18,Rogaland
-Avaldsnes,Karmøy,,Rogaland,Sørvestlandsk,18,Rogaland
-Stangaland,Karmøy,,Rogaland,Sørvestlandsk,18,Rogaland
-Åkra,Karmøy,,Rogaland,Sørvestlandsk,18,Rogaland
-Skudenes,Karmøy,,Rogaland,Sørvestlandsk,18,Rogaland
-Torvastad,Karmøy,,Rogaland,Sørvestlandsk,18,Rogaland
-,Karmøy,,Rogaland,Sørvestlandsk,18,Rogaland
-,Utsira,,Rogaland,Sørvestlandsk,18,Rogaland
-Skjold,Vindafjord,,Rogaland,Sørvestlandsk,18,Rogaland
-Vats,Vindafjord,,Rogaland,Sørvestlandsk,18,Rogaland
-Imsland,Vindafjord,,Rogaland,Sørvestlandsk,18,Rogaland
-Vikedal,Vindafjord,,Rogaland,Sørvestlandsk,18,Rogaland
-Sandeid,Vindafjord,,Rogaland,Sørvestlandsk,18,Rogaland
-Ølen,Vindafjord,,Rogaland,Sørvestlandsk,18,Rogaland
-,Vindafjord,,Rogaland,Sørvestlandsk,18,Rogaland
-Tromsø,Tromsø,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Harstad,Harstad,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Bjarkøy,Harstad,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Alta,Alta,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Vardø,Vardø,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Vadsø,Vadsø,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Hammerfest,Hammerfest,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Kvalsund,Hammerfest,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Kvæfjord,Kvæfjord,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Tjeldsund,Tjeldsund,Nordland,Troms og Finnmark,Troms-Finnmarks-mål,4,Troms
-Skånland,Tjeldsund,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-,Tjeldsund,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Ibestad,Ibestad,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Gratangen,Gratangen,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Lavangen,Lavangen,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Bardu,Bardu,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Salangen,Salangen,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Målselv,Målselv,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Sørreisa,Sørreisa,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Dyrøy,Dyrøy,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Tranøy,Senja,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Torsken,Senja,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Berg,Senja,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Lenvik,Senja,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-,Senja,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Balsfjord,Balsfjord,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Karlsøy,Karlsøy,Troms,Troms og Finnmark,Troms-Finnmarks-mål,3,Troms
-Lyngen,Lyngen,Troms,Troms og Finnmark,Troms-Finnmarks-mål,2,Troms
-Storfjord,Storfjord,Troms,Troms og Finnmark,Troms-Finnmarks-mål,2,Troms
-Kåfjord,Kåfjord,Troms,Troms og Finnmark,Troms-Finnmarks-mål,2,Troms
-Skjervøy,Skjervøy,Troms,Troms og Finnmark,Troms-Finnmarks-mål,2,Troms
-Nordreisa,Nordreisa,Troms,Troms og Finnmark,Troms-Finnmarks-mål,2,Troms
-Kvænangen,Kvænangen,Troms,Troms og Finnmark,Troms-Finnmarks-mål,2,Troms
-Kautokeino,Kautokeino,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,2,Finnmark
-Loppa,Loppa,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,2,Finnmark
-Hasvik,Hasvik,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Måsøy,Måsøy,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Nordkapp,Nordkapp,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Porsanger,Porsanger,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Karasjok,Karasjok,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,2,Finnmark
-Lebesby,Lebesby,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Gamvik,Gamvik,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Berlevåg,Berlevåg,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Tana,Tana,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,2,Finnmark
-Nesseby,Nesseby,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,2,Finnmark
-Båtsfjord,Båtsfjord,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Sør-Varanger,Sør-Varanger,Finnmark,Troms og Finnmark,Troms-Finnmarks-mål,1,Finnmark
-Trondheim,Trondheim,Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Klæbu,Trondheim,Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Steinkjer,Steinkjer,Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Verran,Steinkjer,Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Namsos,Namsos,Trøndelag,Trøndelag,Namdalsk,8,Trøndelag
-Namdalseid,Namsos,Trøndelag,Trøndelag,Namdalsk,9,Trøndelag
-Fosnes,Namsos,Trøndelag,Trøndelag,Namdalsk,8,Trøndelag
-Frøya,Frøya,Sør-Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-Osen,Osen,Sør-Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-Oppdal,Oppdal,Sør-Trøndelag,Trøndelag,Østtrøndsk,10,Trøndelag
-Rennebu,Rennebu,Sør-Trøndelag,Trøndelag,Østtrøndsk,10,Trøndelag
-Røros,Røros,Sør-Trøndelag,Trøndelag,Østtrøndsk,10,Trøndelag
-Holtålen,Holtålen,Sør-Trøndelag,Trøndelag,Østtrøndsk,10,Trøndelag
-Midtre Gauldal,Midtre Gauldal,Sør-Trøndelag,Trøndelag,Østtrøndsk,10,Trøndelag
-Melhus,Melhus,Sør-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Skaun,Skaun,Sør-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Malvik,Malvik,Sør-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Selbu,Selbu,Sør-Trøndelag,Trøndelag,Østtrøndsk,10,Trøndelag
-Tydal,Tydal,Sør-Trøndelag,Trøndelag,Østtrøndsk,10,Trøndelag
-Meråker,Meråker,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Stjørdal,Stjørdal,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Frosta,Frosta,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Levanger,Levanger,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Verdal,Verdal,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Snåsa,Snåsa,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Lierne,Lierne,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Røyrvik,Røyrvik,Nord-Trøndelag,Trøndelag,Namdalsk,9,Trøndelag
-Namsskogan,Namsskogan,Nord-Trøndelag,Trøndelag,Namdalsk,9,Trøndelag
-Grong,Grong,Nord-Trøndelag,Trøndelag,Namdalsk,9,Trøndelag
-Høylandet,Høylandet,Nord-Trøndelag,Trøndelag,Namdalsk,9,Trøndelag
-Overhalla,Overhalla,Nord-Trøndelag,Trøndelag,Namdalsk,9,Trøndelag
-Flatanger,Flatanger,Nord-Trøndelag,Trøndelag,Østtrøndsk,8,Trøndelag
-Leka,Leka,Nord-Trøndelag,Trøndelag,Namdalsk,8,Trøndelag
-Inderøy,Inderøy,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Mosvik,Inderøy,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Rissa,Indre Fosen,Sør-Trøndelag,Trøndelag,Østtrøndsk,8,Trøndelag
-,Indre Fosen,Sør-Trøndelag,Trøndelag,Østtrøndsk,8,Trøndelag
-Leksvik,Indre Fosen,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-,Indre Fosen,Nord-Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-Halsa,Heim,Møre og Romsdal,Trøndelag,Uttrøndersk,8,Trøndelag
-,Heim,Møre og Romsdal,Trøndelag,Uttrøndersk,8,Trøndelag
-Hemne,Heim,Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-Snillfjord,Heim,Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-,Heim,Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-Hitra,Hitra,Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-Snillfjord,Hitra,Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-Ørland,Ørland,Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-Bjugn,Ørland,Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-Åfjord,Åfjord,Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-Roan,Åfjord,Trøndelag,Trøndelag,Uttrøndersk,8,Trøndelag
-Snillfjord,Orkland,Trøndelag,Trøndelag,Østtrøndsk,8,Trøndelag
-Agdenes,Orkland,Trøndelag,Trøndelag,Østtrøndsk,8,Trøndelag
-Meldal,Orkland,Trøndelag,Trøndelag,Østtrøndsk,10,Trøndelag
-Orkdal,Orkland,Trøndelag,Trøndelag,Østtrøndsk,9,Trøndelag
-,Orkland,Trøndelag,Trøndelag,Østtrøndsk,8,Trøndelag
-Vikna,Nærøysund,Trøndelag,Trøndelag,Namdalsk,8,Trøndelag
-Nærøy,Nærøysund,Trøndelag,Trøndelag,Namdalsk,8,Trøndelag
-,Nærøysund,Trøndelag,Trøndelag,Namdalsk,8,Trøndelag
-Rindal,Rindal,Møre og Romsdal,Trøndelag,Uttrøndersk,8,Trøndelag
-Horten,Horten,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Holmestrand,Holmestrand,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Sande,Holmestrand,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Hof,Holmestrand,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Tønsberg,Tønsberg,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Re,Tønsberg,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Sandefjord,Sandefjord,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Andebu,Sandefjord,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Stokke,Sandefjord,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Larvik,Larvik,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Lardal,Larvik,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Porsgrunn,Porsgrunn,Telemark,Vestfold og Telemark,Østlandsk,23,Telemark
-Skien,Skien,Telemark,Vestfold og Telemark,Østlandsk,23,Telemark
-Notodden,Notodden,Telemark,Vestfold og Telemark,Midlandsk,21,Telemark
-Nøtterøy,Færder,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Tjøme,Færder,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-,Færder,Vestfold,Vestfold og Telemark,Østlandsk,23,Vestfold
-Siljan,Siljan,Telemark,Vestfold og Telemark,Østlandsk,23,Telemark
-Bamble,Bamble,Telemark,Vestfold og Telemark,Sørlandsk,23,Telemark
-Kragerø,Kragerø,Telemark,Vestfold og Telemark,Sørlandsk,23,Telemark
-Drangedal,Drangedal,Telemark,Vestfold og Telemark,Sørlandsk,21,Telemark
-Nome,Nome,Telemark,Vestfold og Telemark,Østlandsk,23,Telemark
-Bø,Midt-Telemark,Telemark,Vestfold og Telemark,Midlandsk,21,Telemark
-Sauherad,Midt-Telemark,Telemark,Vestfold og Telemark,Midlandsk,21,Telemark
-,Midt-Telemark,Telemark,Vestfold og Telemark,Midlandsk,21,Telemark
-Tinn,Tinn,Telemark,Vestfold og Telemark,Midlandsk,21,Telemark
-Hjartdal,Hjartdal,Telemark,Vestfold og Telemark,Midlandsk,21,Telemark
-Seljord,Seljord,Telemark,Vestfold og Telemark,Midlandsk,21,Telemark
-Kviteseid,Kviteseid,Telemark,Vestfold og Telemark,Midlandsk,21,Telemark
-Nissedal,Nissedal,Telemark,Vestfold og Telemark,Sørlandsk,21,Telemark
-Fyresdal,Fyresdal,Telemark,Vestfold og Telemark,Sørlandsk,21,Telemark
-Tokke,Tokke,Telemark,Vestfold og Telemark,Midlandsk,21,Telemark
-Vinje,Vinje,Telemark,Vestfold og Telemark,Midlandsk,21,Telemark
-Bergen,Bergen,Hordaland,Vestland,Sørvestlandsk,17,Vestland
-Flora,Kinn,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Vågsøy,Kinn,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-,Kinn,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Etne,Etne,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Sveio,Sveio,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Bømlo,Bømlo,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Stord,Stord,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Fitjar,Fitjar,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Tysnes,Tysnes,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Kvinnherad,Kvinnherad,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Jondal,Ullensvang,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Odda,Ullensvang,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Ullensvang,Ullensvang,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Eidfjord,Eidfjord,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Ulvik,Ulvik,Hordaland,Vestland,Sørvestlandsk,15,Vestland
-Granvin,Voss,Hordaland,Vestland,Sørvestlandsk,15,Vestland
-Voss,Voss,Hordaland,Vestland,Sørvestlandsk,15,Vestland
-Kvam,Kvam,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Samnanger,Samnanger,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Fusa,Bjørnafjorden,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Os,Bjørnafjorden,Hordaland,Vestland,Sørvestlandsk,17,Vestland
-,Bjørnafjorden,Hordaland,Vestland,Sørvestlandsk,17,Vestland
-Austevoll,Austevoll,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Sund,Øygarden,Hordaland,Vestland,Sørvestlandsk,17,Vestland
-Fjell,Øygarden,Hordaland,Vestland,Sørvestlandsk,17,Vestland
-Øygarden,Øygarden,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Askøy,Askøy,Hordaland,Vestland,Sørvestlandsk,17,Vestland
-Vaksdal,Vaksdal,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Modalen,Modalen,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Osterøy,Osterøy,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Meland,Alver,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Radøy,Alver,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Lindås,Alver,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-,Alver,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Austrheim,Austrheim,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Fedje,Fedje,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Masfjorden,Masfjorden,Hordaland,Vestland,Sørvestlandsk,16,Vestland
-Gulen,Gulen,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Solund,Solund,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Hyllestad,Hyllestad,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Høyanger,Høyanger,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Vik,Vik,Sogn og Fjordane,Vestland,Sørvestlandsk,14,Vestland
-Balestrand,Sogndal,Sogn og Fjordane,Vestland,Sørvestlandsk,14,Vestland
-Leikanger,Sogndal,Sogn og Fjordane,Vestland,Sørvestlandsk,14,Vestland
-Sogndal,Sogndal,Sogn og Fjordane,Vestland,Sørvestlandsk,14,Vestland
-Aurland,Aurland,Sogn og Fjordane,Vestland,Sørvestlandsk,14,Vestland
-Lærdal,Lærdal,Sogn og Fjordane,Vestland,Sørvestlandsk,14,Vestland
-Årdal,Årdal,Sogn og Fjordane,Vestland,Sørvestlandsk,14,Vestland
-Luster,Luster,Sogn og Fjordane,Vestland,Sørvestlandsk,14,Vestland
-Askvoll,Askvoll,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Fjaler,Fjaler,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Gaular,Sunnfjord,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Jølster,Sunnfjord,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Førde,Sunnfjord,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Naustdal,Sunnfjord,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-,Sunnfjord,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Bremanger,Bremanger,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Vågsøy,Stad,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Selje,Stad,Sogn og Fjordane,Vestland,Nordvestlandsk,12,Vestland
-Eid,Stad,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-,Stad,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Gloppen,Gloppen,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Stryn,Stryn,Sogn og Fjordane,Vestland,Nordvestlandsk,13,Vestland
-Halden,Halden,Østfold,Viken,Østlandsk,23,Østfold
-Moss,Moss,Østfold,Viken,Østlandsk,23,Østfold
-Rygge,Moss,Østfold,Viken,Østlandsk,23,Østfold
-Sarpsborg,Sarpsborg,Østfold,Viken,Østlandsk,23,Østfold
-Fredrikstad,Fredrikstad,Østfold,Viken,Østlandsk,23,Østfold
-Drammen,Drammen,Buskerud,Viken,Østlandsk,23,Buskerud
-Nedre Eiker,Drammen,Buskerud,Viken,Østlandsk,23,Buskerud
-Svelvik,Drammen,Vestfold,Viken,Østlandsk,23,Buskerud
-,Drammen,Vestfold,Viken,Østlandsk,23,Buskerud
-Kongsberg,Kongsberg,Buskerud,Viken,Østlandsk,23,Buskerud
-Ringerike,Ringerike,Buskerud,Viken,Østlandsk,21,Buskerud
-Hvaler,Hvaler,Østfold,Viken,Østlandsk,23,Østfold
-Aremark,Aremark,Østfold,Viken,Østlandsk,23,Østfold
-Marker,Marker,Østfold,Viken,Østlandsk,23,Østfold
-Trøgstad,Indre Østfold,Østfold,Viken,Østlandsk,23,Østfold
-Spydeberg,Indre Østfold,Østfold,Viken,Østlandsk,23,Østfold
-Askim,Indre Østfold,Østfold,Viken,Østlandsk,23,Østfold
-Eidsberg,Indre Østfold,Østfold,Viken,Østlandsk,23,Østfold
-Hobøl,Indre Østfold,Østfold,Viken,Østlandsk,23,Østfold
-,Indre Østfold,Østfold,Viken,Østlandsk,23,Østfold
-Skiptvet,Skiptvet,Østfold,Viken,Østlandsk,23,Østfold
-Rakkestad,Rakkestad,Østfold,Viken,Østlandsk,23,Østfold
-Råde,Råde,Østfold,Viken,Østlandsk,23,Østfold
-Våler,Våler,Østfold,Viken,Østlandsk,23,Østfold
-Vestby,Vestby,Akershus,Viken,Østlandsk,22,Akershus
-Ski,Nordre Follo,Akershus,Viken,Østlandsk,22,Akershus
-Oppegård,Nordre Follo,Akershus,Viken,Østlandsk,22,Akershus
-,Nordre Follo,Akershus,Viken,Østlandsk,22,Akershus
-Ås,Ås,Akershus,Viken,Østlandsk,22,Akershus
-Frogn,Frogn,Akershus,Viken,Østlandsk,22,Akershus
-Nesodden,Nesodden,Akershus,Viken,Østlandsk,22,Akershus
-Bærum,Bærum,Akershus,Viken,Østlandsk,22,Akershus
-Asker,Asker,Akershus,Viken,Østlandsk,22,Akershus
-Røyken,Asker,Buskerud,Viken,Østlandsk,23,Akershus
-Hurum,Asker,Buskerud,Viken,Østlandsk,23,Akershus
-,Asker,Buskerud,Viken,Østlandsk,23,Akershus
-Rømskog,Aurskog-Høland,Østfold,Viken,Østlandsk,23,Akershus
-,Aurskog-Høland,Østfold,Viken,Østlandsk,23,Akershus
-Aurskog-Høland,Aurskog-Høland,Akershus,Viken,Østlandsk,22,Akershus
-Rælingen,Rælingen,Akershus,Viken,Østlandsk,22,Akershus
-Enebakk,Enebakk,Akershus,Viken,Østlandsk,22,Akershus
-Lørenskog,Lørenskog,Akershus,Viken,Østlandsk,22,Akershus
-Sørum,Lillestrøm,Akershus,Viken,Østlandsk,22,Akershus
-Fet,Lillestrøm,Akershus,Viken,Østlandsk,22,Akershus
-Skedsmo,Lillestrøm,Akershus,Viken,Østlandsk,22,Akershus
-,Lillestrøm,Akershus,Viken,Østlandsk,22,Akershus
-Nittedal,Nittedal,Akershus,Viken,Østlandsk,22,Akershus
-Gjerdrum,Gjerdrum,Akershus,Viken,Østlandsk,22,Akershus
-Ullensaker,Ullensaker,Akershus,Viken,Østlandsk,22,Akershus
-Nes,Nes,Akershus,Viken,Østlandsk,22,Akershus
-Eidsvoll,Eidsvoll,Akershus,Viken,Østlandsk,22,Akershus
-Nannestad,Nannestad,Akershus,Viken,Østlandsk,22,Akershus
-Hurdal,Hurdal,Akershus,Viken,Østlandsk,22,Akershus
-Hole,Hole,Buskerud,Viken,Østlandsk,21,Buskerud
-Flå,Flå,Buskerud,Viken,Midlandsk,21,Buskerud
-Nes,Nesbyen,Buskerud,Viken,Midlandsk,21,Buskerud
-,Nesbyen,Buskerud,Viken,Midlandsk,21,Buskerud
-Gol,Gol,Buskerud,Viken,Midlandsk,21,Buskerud
-Hemsedal,Hemsedal,Buskerud,Viken,Midlandsk,21,Buskerud
-Ål,Ål,Buskerud,Viken,Midlandsk,21,Buskerud
-Hol,Hol,Buskerud,Viken,Midlandsk,21,Buskerud
-Sigdal,Sigdal,Buskerud,Viken,Midlandsk,21,Buskerud
-Krødsherad,Krødsherad,Buskerud,Viken,Midlandsk,21,Buskerud
-Modum,Modum,Buskerud,Viken,Østlandsk,21,Buskerud
-Øvre Eiker,Øvre Eiker,Buskerud,Viken,Østlandsk,23,Buskerud
-Lier,Lier,Buskerud,Viken,Østlandsk,23,Buskerud
-Flesberg,Flesberg,Buskerud,Viken,Midlandsk,21,Buskerud
-Rollag,Rollag,Buskerud,Viken,Midlandsk,21,Buskerud
-Nore og Uvdal,Nore og Uvdal,Buskerud,Viken,Midlandsk,21,Buskerud
-Jevnaker,Jevnaker,Oppland,Viken,Østlandsk,21,Akershus
-Lunner,Lunner,Oppland,Viken,Østlandsk,21,Akershus
+old_muni,new_muni,old_county,new_county,new_county_2024,named_dialect,numeric_dialect
+Risør,Risør,Aust-Agder,Agder,Agder,Sørlandsk,20
+Grimstad,Grimstad,Aust-Agder,Agder,Agder,Sørlandsk,20
+Arendal,Arendal,Aust-Agder,Agder,Agder,Sørlandsk,20
+Kristiansand,Kristiansand,Vest-Agder,Agder,Agder,Sørlandsk,19
+Songdalen,Kristiansand,Vest-Agder,Agder,Agder,Sørlandsk,19
+Søgne,Kristiansand,Vest-Agder,Agder,Agder,Sørlandsk,19
+Mandal,Lindesnes,Vest-Agder,Agder,Agder,Sørlandsk,19
+Marnardal,Lindesnes,Vest-Agder,Agder,Agder,Sørlandsk,19
+Lindesnes,Lindesnes,Vest-Agder,Agder,Agder,Sørlandsk,19
+Farsund,Farsund,Vest-Agder,Agder,Agder,Sørvestlandsk,19
+Flekkefjord,Flekkefjord,Vest-Agder,Agder,Agder,Sørvestlandsk,19
+Gjerstad,Gjerstad,Aust-Agder,Agder,Agder,Sørlandsk,20
+Vegårshei,Vegårshei,Aust-Agder,Agder,Agder,Sørlandsk,20
+Tvedestrand,Tvedestrand,Aust-Agder,Agder,Agder,Sørlandsk,20
+Froland,Froland,Aust-Agder,Agder,Agder,Sørlandsk,20
+Lillesand,Lillesand,Aust-Agder,Agder,Agder,Sørlandsk,20
+Birkenes,Birkenes,Aust-Agder,Agder,Agder,Sørlandsk,20
+Åmli,Åmli,Aust-Agder,Agder,Agder,Sørlandsk,20
+Iveland,Iveland,Aust-Agder,Agder,Agder,Sørlandsk,20
+Evje og Hornnes,Evje og Hornnes,Aust-Agder,Agder,Agder,Sørlandsk,20
+Bygland,Bygland,Aust-Agder,Agder,Agder,Sørlandsk,20
+Valle,Valle,Aust-Agder,Agder,Agder,Sørlandsk,20
+Bykle,Bykle,Aust-Agder,Agder,Agder,Sørlandsk,20
+Vennesla,Vennesla,Vest-Agder,Agder,Agder,Sørlandsk,19
+Åseral,Åseral,Vest-Agder,Agder,Agder,Sørvestlandsk,19
+Audnedal,Lyngdal,Vest-Agder,Agder,Agder,Sørvestlandsk,19
+Lyngdal,Lyngdal,Vest-Agder,Agder,Agder,Sørvestlandsk,19
+Hægebostad,Hægebostad,Vest-Agder,Agder,Agder,Sørvestlandsk,19
+Kvinesdal,Kvinesdal,Vest-Agder,Agder,Agder,Sørvestlandsk,19
+Sirdal,Sirdal,Vest-Agder,Agder,Agder,Sørvestlandsk,19
+Alvdal,Alvdal,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Dovre,Dovre,Oppland,Innlandet,Innlandet,Midlandsk,21
+Eidskog,Eidskog,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Elverum,Elverum,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Engerdal,Engerdal,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Etnedal,Etnedal,Oppland,Innlandet,Innlandet,Midlandsk,21
+Folldal,Folldal,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Gausdal,Gausdal,Oppland,Innlandet,Innlandet,Midlandsk,21
+Gjøvik,Gjøvik,Oppland,Innlandet,Innlandet,Østlandsk,21
+Gran,Gran,Oppland,Innlandet,Innlandet,Østlandsk,21
+Grue,Grue,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Hamar,Hamar,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Kongsvinger,Kongsvinger,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Lesja,Lesja,Oppland,Innlandet,Innlandet,Midlandsk,21
+Lillehammer,Lillehammer,Oppland,Innlandet,Innlandet,Østlandsk,21
+Lom,Lom,Oppland,Innlandet,Innlandet,Midlandsk,21
+Løten,Løten,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Nord-Aurdal,Nord-Aurdal,Oppland,Innlandet,Innlandet,Midlandsk,21
+Nord-Fron,Nord-Fron,Oppland,Innlandet,Innlandet,Midlandsk,21
+Nord-Odal,Nord-Odal,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Nordre Land,Nordre Land,Oppland,Innlandet,Innlandet,Østlandsk,21
+Os,Os,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Rendalen,Rendalen,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Ringebu,Ringebu,Oppland,Innlandet,Innlandet,Midlandsk,21
+Ringsaker,Ringsaker,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Sel,Sel,Oppland,Innlandet,Innlandet,Midlandsk,21
+Skjåk,Skjåk,Oppland,Innlandet,Innlandet,Midlandsk,21
+Stange,Stange,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Stor-Elvdal,Stor-Elvdal,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Søndre Land,Søndre Land,Oppland,Innlandet,Innlandet,Østlandsk,21
+Sør-Aurdal,Sør-Aurdal,Oppland,Innlandet,Innlandet,Midlandsk,21
+Sør-Fron,Sør-Fron,Oppland,Innlandet,Innlandet,Midlandsk,21
+Sør-Odal,Sør-Odal,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Tolga,Tolga,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Trysil,Trysil,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Tynset,Tynset,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Vang,Vang,Oppland,Innlandet,Innlandet,Midlandsk,21
+Vestre Slidre,Vestre Slidre,Oppland,Innlandet,Innlandet,Midlandsk,21
+Vestre Toten,Vestre Toten,Oppland,Innlandet,Innlandet,Østlandsk,21
+Vågå,Vågå,Oppland,Innlandet,Innlandet,Midlandsk,21
+Våler,Våler,Hedmark,Innlandet,Østfold,Østlandsk,21
+Østre Toten,Østre Toten,Oppland,Innlandet,Innlandet,Østlandsk,21
+Øyer,Øyer,Oppland,Innlandet,Innlandet,Midlandsk,21
+Øystre Slidre,Øystre Slidre,Oppland,Innlandet,Innlandet,Midlandsk,21
+Åmot,Åmot,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Åsnes,Åsnes,Hedmark,Innlandet,Innlandet,Østlandsk,21
+Bremsnes,Kristiansund,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Grip,Kristiansund,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Frei,Kristiansund,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+,Kristiansund,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Eresfjord og Vistdal,Molde,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Nesset,Molde,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Bolsøy,Molde,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Midsund,Molde,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Sør-Aukra,Molde,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+,Molde,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Ørskog,Ålesund,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Skodje,Ålesund,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Vatne,Ålesund,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Borgund,Ålesund,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Haram,Ålesund,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Sandøy,Ålesund,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Ålesund,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Syvde,Vanylven,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Rovde,Vanylven,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Vanylven,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Rovde,Sande,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Sande,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Herøy,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Ulstein,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Hareid,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Vartdal,Ørsta,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Hjørundfjord,Ørsta,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Ørsta,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Sunnylven,Stranda,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Stranda,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Sykkylven,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Sula,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Vigra,Giske,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Giske,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Tresfjord,Vestnes,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Vestnes,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Voll,Rauma,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Eid og Voll,Rauma,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Eid,Rauma,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Grytten,Rauma,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Hen,Rauma,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Veøy,Rauma,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+,Rauma,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Sandøy,Aukra,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Aukra,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Kornstad,Averøy,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Kvernes,Averøy,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Bremsnes,Averøy,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+,Averøy,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Kvernes,Gjemnes,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,8
+Øre,Gjemnes,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,8
+,Gjemnes,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,8
+Straumsnes,Tingvoll,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Stangvik,Tingvoll,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+,Tingvoll,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Øksendal,Sunndal,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Ålvundeid,Sunndal,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Stangvik,Sunndal,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+,Sunndal,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Stangvik,Surnadal,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Åsskard,Surnadal,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+,Surnadal,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Edøy,Smøla,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Brattvær,Smøla,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Hopen,Smøla,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+,Smøla,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Stemshaug,Aure,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Valsøyfjord,Aure,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Tustna,Aure,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+,Aure,,Møre og Romsdal,Møre og Romsdal,Uttrøndersk,8
+Hornindal,Volda,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Dalsfjord,Volda,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Volda,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Norddal,Fjord,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Stordal,Fjord,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+,Fjord,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,12
+Fræna,Hustadvika,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Bud,Hustadvika,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Hustad,Hustadvika,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Eide,Hustadvika,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+,Hustadvika,,Møre og Romsdal,Møre og Romsdal,Nordvestlandsk,11
+Skjerstad,Bodø,,Nordland,Nordland,Nordlandsk,5
+Bodin,Bodø,,Nordland,Nordland,Nordlandsk,5
+Kjerringøy,Bodø,,Nordland,Nordland,Nordlandsk,5
+Nordfold-Kjerringøy,Bodø,,Nordland,Nordland,Nordlandsk,5
+,Bodø,,Nordland,Nordland,Nordlandsk,5
+Narvik,Narvik,,Nordland,Nordland,Nordlandsk,4
+Tysfjord,Narvik,,Nordland,Nordland,Nordlandsk,4
+Ofoten,Narvik,,Nordland,Nordland,Nordlandsk,4
+Ballangen,Narvik,,Nordland,Nordland,Nordlandsk,4
+Ankenes,Narvik,,Nordland,Nordland,Nordlandsk,4
+,Bindal,,Nordland,Nordland,Helgelandsk,8
+,Sømna,,Nordland,Nordland,Helgelandsk,7
+Brønnøysund,Brønnøy,,Nordland,Nordland,Helgelandsk,7
+Velfjord,Brønnøy,,Nordland,Nordland,Helgelandsk,7
+Brønnøy,Brønnøy,,Nordland,Nordland,Helgelandsk,7
+Tjøtta,Vega,,Nordland,Nordland,Helgelandsk,7
+,Vega,,Nordland,Nordland,Helgelandsk,7
+,Vevelstad,,Nordland,Nordland,Helgelandsk,7
+,Herøy,,Nordland,Nordland,Helgelandsk,7
+Stamnes,Alstahaug,,Nordland,Nordland,Helgelandsk,7
+Tjøtta,Alstahaug,,Nordland,Nordland,Helgelandsk,7
+,Alstahaug,,Nordland,Nordland,Helgelandsk,7
+Stamnes,Leirfjord,,Nordland,Nordland,Helgelandsk,7
+Tjøtta,Leirfjord,,Nordland,Nordland,Helgelandsk,7
+,Leirfjord,,Nordland,Nordland,Helgelandsk,7
+Mosjøen,Vefsn,,Nordland,Nordland,Helgelandsk,7
+Drevja,Vefsn,,Nordland,Nordland,Helgelandsk,7
+Elsfjord,Vefsn,,Nordland,Nordland,Helgelandsk,7
+,Vefsn,,Nordland,Nordland,Helgelandsk,7
+,Grane,,Nordland,Nordland,Helgelandsk,7
+,Hattfjelldal,,Nordland,Nordland,Helgelandsk,7
+Nordvik,Dønna,,Nordland,Nordland,Helgelandsk,6
+Dønnes,Dønna,,Nordland,Nordland,Helgelandsk,6
+,Dønna,,Nordland,Nordland,Helgelandsk,6
+,Nesna,,Nordland,Nordland,Helgelandsk,6
+Korgen,Hemnes,,Nordland,Nordland,Helgelandsk,6
+Sør-Rana,Hemnes,,Nordland,Nordland,Helgelandsk,6
+,Hemnes,,Nordland,Nordland,Helgelandsk,6
+Mo i Rana,Rana,,Nordland,Nordland,Helgelandsk,6
+Nesna,Rana,,Nordland,Nordland,Helgelandsk,6
+Sør-Rana,Rana,,Nordland,Nordland,Helgelandsk,6
+Nord-Rana,Rana,,Nordland,Nordland,Helgelandsk,6
+,Rana,,Nordland,Nordland,Helgelandsk,6
+,Lurøy,,Nordland,Nordland,Helgelandsk,6
+,Træna,,Nordland,Nordland,Helgelandsk,6
+,Rødøy,,Nordland,Nordland,Helgelandsk,6
+,Meløy,,Nordland,Nordland,Helgelandsk,6
+,Gildeskål,,Nordland,Nordland,Nordlandsk,5
+,Beiarn,,Nordland,Nordland,Nordlandsk,5
+,Saltdal,,Nordland,Nordland,Nordlandsk,5
+,Fauske,,Nordland,Nordland,Nordlandsk,5
+Folden,Sørfold,,Nordland,Nordland,Nordlandsk,5
+Nordfold,Sørfold,,Nordland,Nordland,Nordlandsk,5
+Nordfold-Kjerringøy,Sørfold,,Nordland,Nordland,Nordlandsk,5
+,Sørfold,,Nordland,Nordland,Nordlandsk,5
+Nordfold,Steigen,,Nordland,Nordland,Nordlandsk,5
+Nordfold-Kjerringøy,Steigen,,Nordland,Nordland,Nordlandsk,5
+Leiranger,Steigen,,Nordland,Nordland,Nordlandsk,5
+,Steigen,,Nordland,Nordland,Nordlandsk,5
+,Lødingen,,Nordland,Nordland,Nordlandsk,4
+Ofoten,Evenes,,Nordland,Nordland,Nordlandsk,4
+,Evenes,,Nordland,Nordland,Nordlandsk,4
+,Røst,,Nordland,Nordland,Nordlandsk,5
+,Værøy,,Nordland,Nordland,Nordlandsk,5
+Moskenes,Flakstad,,Nordland,Nordland,Nordlandsk,5
+,Flakstad,,Nordland,Nordland,Nordlandsk,5
+Buksnes,Vestvågøy,,Nordland,Nordland,Nordlandsk,5
+Hol,Vestvågøy,,Nordland,Nordland,Nordlandsk,5
+Borge,Vestvågøy,,Nordland,Nordland,Nordlandsk,5
+Valberg,Vestvågøy,,Nordland,Nordland,Nordlandsk,5
+,Vestvågøy,,Nordland,Nordland,Nordlandsk,5
+Svolvær,Vågan,,Nordland,Nordland,Nordlandsk,5
+Gimsøy,Vågan,,Nordland,Nordland,Nordlandsk,5
+,Vågan,,Nordland,Nordland,Nordlandsk,5
+,Hadsel,,Nordland,Nordland,Nordlandsk,5
+,Bø,,Nordland,Nordland,Nordlandsk,4
+Langenes,Øksnes,,Nordland,Nordland,Nordlandsk,4
+,Øksnes,,Nordland,Nordland,Nordlandsk,4
+,Sortland,,Nordland,Nordland,Nordlandsk,4
+Bjørnskinn,Andøy,,Nordland,Nordland,Nordlandsk,4
+Dverberg,Andøy,,Nordland,Nordland,Nordlandsk,4
+Andenes,Andøy,,Nordland,Nordland,Nordlandsk,4
+,Andøy,,Nordland,Nordland,Nordlandsk,4
+Moskenes,Moskenes,,Nordland,Nordland,Nordlandsk,5
+Hamarøy,Hamarøy,,Nordland,Nordland,Nordlandsk,5
+Tysfjord,Hamarøy,,Nordland,Nordland,Nordlandsk,4
+Oslo,Oslo,Oslo,Oslo,Oslo,Østlandsk,22
+Egersund,Eigersund,,Rogaland,Rogaland,Sørvestlandsk,18
+Heskestad,Eigersund,,Rogaland,Rogaland,Sørvestlandsk,18
+Helleland,Eigersund,,Rogaland,Rogaland,Sørvestlandsk,18
+,Eigersund,,Rogaland,Rogaland,Sørvestlandsk,18
+Håland,Stavanger,,Rogaland,Rogaland,Sørvestlandsk,18
+Madla,Stavanger,,Rogaland,Rogaland,Sørvestlandsk,18
+Hetland,Stavanger,,Rogaland,Rogaland,Sørvestlandsk,18
+Fister,Stavanger,,Rogaland,Rogaland,Sørvestlandsk,18
+Hjelmeland og Fister,Stavanger,,Rogaland,Rogaland,Sørvestlandsk,18
+Sjernarøy,Stavanger,,Rogaland,Rogaland,Sørvestlandsk,18
+Finnøy,Stavanger,,Rogaland,Rogaland,Sørvestlandsk,18
+Rennesøy,Stavanger,,Rogaland,Rogaland,Sørvestlandsk,18
+,Stavanger,,Rogaland,Rogaland,Sørvestlandsk,18
+Torvastad,Haugesund,,Rogaland,Rogaland,Sørvestlandsk,18
+Skåre,Haugesund,,Rogaland,Rogaland,Sørvestlandsk,18
+,Haugesund,,Rogaland,Rogaland,Sørvestlandsk,18
+Høyland,Sandnes,,Rogaland,Rogaland,Sørvestlandsk,18
+Hetland,Sandnes,,Rogaland,Rogaland,Sørvestlandsk,18
+Høle,Sandnes,,Rogaland,Rogaland,Sørvestlandsk,18
+Forsand,Sandnes,,Rogaland,Rogaland,Sørvestlandsk,18
+,Sandnes,,Rogaland,Rogaland,Sørvestlandsk,18
+Sogndal,Sokndal,,Rogaland,Rogaland,Sørvestlandsk,18
+,Sokndal,,Rogaland,Rogaland,Sørvestlandsk,18
+Heskestad,Lund,,Rogaland,Rogaland,Sørvestlandsk,18
+,Lund,,Rogaland,Rogaland,Sørvestlandsk,18
+,Bjerkreim,,Rogaland,Rogaland,Sørvestlandsk,18
+Ogna,Hå,,Rogaland,Rogaland,Sørvestlandsk,18
+Varhaug,Hå,,Rogaland,Rogaland,Sørvestlandsk,18
+Nærbø,Hå,,Rogaland,Rogaland,Sørvestlandsk,18
+,Hå,,Rogaland,Rogaland,Sørvestlandsk,18
+,Klepp,,Rogaland,Rogaland,Sørvestlandsk,18
+,Time,,Rogaland,Rogaland,Sørvestlandsk,18
+Høle,Gjesdal,,Rogaland,Rogaland,Sørvestlandsk,18
+,Gjesdal,,Rogaland,Rogaland,Sørvestlandsk,18
+Håland,Sola,,Rogaland,Rogaland,Sørvestlandsk,18
+,Sola,,Rogaland,Rogaland,Sørvestlandsk,18
+,Randaberg,,Rogaland,Rogaland,Sørvestlandsk,18
+Forsand,Strand,,Rogaland,Rogaland,Sørvestlandsk,18
+,Strand,,Rogaland,Rogaland,Sørvestlandsk,18
+Årdal,Hjelmeland,,Rogaland,Rogaland,Sørvestlandsk,18
+Fister,Hjelmeland,,Rogaland,Rogaland,Sørvestlandsk,18
+Hjelmeland og Fister,Hjelmeland,,Rogaland,Rogaland,Sørvestlandsk,18
+,Hjelmeland,,Rogaland,Rogaland,Sørvestlandsk,18
+Sand,Suldal,,Rogaland,Rogaland,Sørvestlandsk,18
+Erfjord,Suldal,,Rogaland,Rogaland,Sørvestlandsk,18
+Jelsa,Suldal,,Rogaland,Rogaland,Sørvestlandsk,18
+Imsland,Suldal,,Rogaland,Rogaland,Sørvestlandsk,18
+,Suldal,,Rogaland,Rogaland,Sørvestlandsk,18
+,Sauda,,Rogaland,Rogaland,Sørvestlandsk,18
+,Kvitsøy,,Rogaland,Rogaland,Sørvestlandsk,18
+,Bokn,,Rogaland,Rogaland,Sørvestlandsk,18
+Nedstrand,Tysvær,,Rogaland,Rogaland,Sørvestlandsk,18
+Avaldsnes,Tysvær,,Rogaland,Rogaland,Sørvestlandsk,18
+Skjold,Tysvær,,Rogaland,Rogaland,Sørvestlandsk,18
+,Tysvær,,Rogaland,Rogaland,Sørvestlandsk,18
+Skudeneshavn,Karmøy,,Rogaland,Rogaland,Sørvestlandsk,18
+Kopervik,Karmøy,,Rogaland,Rogaland,Sørvestlandsk,18
+Avaldsnes,Karmøy,,Rogaland,Rogaland,Sørvestlandsk,18
+Stangaland,Karmøy,,Rogaland,Rogaland,Sørvestlandsk,18
+Åkra,Karmøy,,Rogaland,Rogaland,Sørvestlandsk,18
+Skudenes,Karmøy,,Rogaland,Rogaland,Sørvestlandsk,18
+Torvastad,Karmøy,,Rogaland,Rogaland,Sørvestlandsk,18
+,Karmøy,,Rogaland,Rogaland,Sørvestlandsk,18
+,Utsira,,Rogaland,Rogaland,Sørvestlandsk,18
+Skjold,Vindafjord,,Rogaland,Rogaland,Sørvestlandsk,18
+Vats,Vindafjord,,Rogaland,Rogaland,Sørvestlandsk,18
+Imsland,Vindafjord,,Rogaland,Rogaland,Sørvestlandsk,18
+Vikedal,Vindafjord,,Rogaland,Rogaland,Sørvestlandsk,18
+Sandeid,Vindafjord,,Rogaland,Rogaland,Sørvestlandsk,18
+Ølen,Vindafjord,,Rogaland,Rogaland,Sørvestlandsk,18
+,Vindafjord,,Rogaland,Rogaland,Sørvestlandsk,18
+Tromsø,Tromsø,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Harstad,Harstad,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Bjarkøy,Harstad,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Alta,Alta,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Vardø,Vardø,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Vadsø,Vadsø,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Hammerfest,Hammerfest,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Kvalsund,Hammerfest,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Kvæfjord,Kvæfjord,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Tjeldsund,Tjeldsund,Nordland,Troms og Finnmark,Troms,Troms-Finnmarks-mål,4
+Skånland,Tjeldsund,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+,Tjeldsund,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Ibestad,Ibestad,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Gratangen,Gratangen,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Lavangen,Lavangen,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Bardu,Bardu,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Salangen,Salangen,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Målselv,Målselv,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Sørreisa,Sørreisa,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Dyrøy,Dyrøy,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Tranøy,Senja,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Torsken,Senja,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Berg,Senja,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Lenvik,Senja,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+,Senja,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Balsfjord,Balsfjord,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Karlsøy,Karlsøy,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,3
+Lyngen,Lyngen,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,2
+Storfjord,Storfjord,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,2
+Kåfjord,Kåfjord,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,2
+Skjervøy,Skjervøy,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,2
+Nordreisa,Nordreisa,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,2
+Kvænangen,Kvænangen,Troms,Troms og Finnmark,Troms,Troms-Finnmarks-mål,2
+Kautokeino,Kautokeino,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,2
+Loppa,Loppa,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,2
+Hasvik,Hasvik,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Måsøy,Måsøy,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Nordkapp,Nordkapp,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Porsanger,Porsanger,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Karasjok,Karasjok,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,2
+Lebesby,Lebesby,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Gamvik,Gamvik,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Berlevåg,Berlevåg,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Tana,Tana,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,2
+Nesseby,Nesseby,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,2
+Båtsfjord,Båtsfjord,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Sør-Varanger,Sør-Varanger,Finnmark,Troms og Finnmark,Finnmark,Troms-Finnmarks-mål,1
+Trondheim,Trondheim,Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Klæbu,Trondheim,Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Steinkjer,Steinkjer,Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Verran,Steinkjer,Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Namsos,Namsos,Trøndelag,Trøndelag,Trøndelag,Namdalsk,8
+Namdalseid,Namsos,Trøndelag,Trøndelag,Trøndelag,Namdalsk,9
+Fosnes,Namsos,Trøndelag,Trøndelag,Trøndelag,Namdalsk,8
+Frøya,Frøya,Sør-Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+Osen,Osen,Sør-Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+Oppdal,Oppdal,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,10
+Rennebu,Rennebu,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,10
+Røros,Røros,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,10
+Holtålen,Holtålen,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,10
+Midtre Gauldal,Midtre Gauldal,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,10
+Melhus,Melhus,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Skaun,Skaun,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Malvik,Malvik,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Selbu,Selbu,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,10
+Tydal,Tydal,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,10
+Meråker,Meråker,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Stjørdal,Stjørdal,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Frosta,Frosta,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Levanger,Levanger,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Verdal,Verdal,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Snåsa,Snåsa,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Lierne,Lierne,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Røyrvik,Røyrvik,Nord-Trøndelag,Trøndelag,Trøndelag,Namdalsk,9
+Namsskogan,Namsskogan,Nord-Trøndelag,Trøndelag,Trøndelag,Namdalsk,9
+Grong,Grong,Nord-Trøndelag,Trøndelag,Trøndelag,Namdalsk,9
+Høylandet,Høylandet,Nord-Trøndelag,Trøndelag,Trøndelag,Namdalsk,9
+Overhalla,Overhalla,Nord-Trøndelag,Trøndelag,Trøndelag,Namdalsk,9
+Flatanger,Flatanger,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,8
+Leka,Leka,Nord-Trøndelag,Trøndelag,Trøndelag,Namdalsk,8
+Inderøy,Inderøy,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Mosvik,Inderøy,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Rissa,Indre Fosen,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,8
+,Indre Fosen,Sør-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,8
+Leksvik,Indre Fosen,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+,Indre Fosen,Nord-Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+Halsa,Heim,Møre og Romsdal,Trøndelag,Trøndelag,Uttrøndersk,8
+,Heim,Møre og Romsdal,Trøndelag,Trøndelag,Uttrøndersk,8
+Hemne,Heim,Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+Snillfjord,Heim,Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+,Heim,Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+Hitra,Hitra,Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+Snillfjord,Hitra,Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+Ørland,Ørland,Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+Bjugn,Ørland,Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+Åfjord,Åfjord,Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+Roan,Åfjord,Trøndelag,Trøndelag,Trøndelag,Uttrøndersk,8
+Snillfjord,Orkland,Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,8
+Agdenes,Orkland,Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,8
+Meldal,Orkland,Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,10
+Orkdal,Orkland,Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,9
+,Orkland,Trøndelag,Trøndelag,Trøndelag,Østtrøndsk,8
+Vikna,Nærøysund,Trøndelag,Trøndelag,Trøndelag,Namdalsk,8
+Nærøy,Nærøysund,Trøndelag,Trøndelag,Trøndelag,Namdalsk,8
+,Nærøysund,Trøndelag,Trøndelag,Trøndelag,Namdalsk,8
+Rindal,Rindal,Møre og Romsdal,Trøndelag,Trøndelag,Uttrøndersk,8
+Horten,Horten,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Holmestrand,Holmestrand,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Sande,Holmestrand,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Hof,Holmestrand,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Tønsberg,Tønsberg,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Re,Tønsberg,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Sandefjord,Sandefjord,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Andebu,Sandefjord,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Stokke,Sandefjord,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Larvik,Larvik,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Lardal,Larvik,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Porsgrunn,Porsgrunn,Telemark,Vestfold og Telemark,Telemark,Østlandsk,23
+Skien,Skien,Telemark,Vestfold og Telemark,Telemark,Østlandsk,23
+Notodden,Notodden,Telemark,Vestfold og Telemark,Telemark,Midlandsk,21
+Nøtterøy,Færder,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Tjøme,Færder,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+,Færder,Vestfold,Vestfold og Telemark,Vestfold,Østlandsk,23
+Siljan,Siljan,Telemark,Vestfold og Telemark,Telemark,Østlandsk,23
+Bamble,Bamble,Telemark,Vestfold og Telemark,Telemark,Sørlandsk,23
+Kragerø,Kragerø,Telemark,Vestfold og Telemark,Telemark,Sørlandsk,23
+Drangedal,Drangedal,Telemark,Vestfold og Telemark,Telemark,Sørlandsk,21
+Nome,Nome,Telemark,Vestfold og Telemark,Telemark,Østlandsk,23
+Bø,Midt-Telemark,Telemark,Vestfold og Telemark,Telemark,Midlandsk,21
+Sauherad,Midt-Telemark,Telemark,Vestfold og Telemark,Telemark,Midlandsk,21
+,Midt-Telemark,Telemark,Vestfold og Telemark,Telemark,Midlandsk,21
+Tinn,Tinn,Telemark,Vestfold og Telemark,Telemark,Midlandsk,21
+Hjartdal,Hjartdal,Telemark,Vestfold og Telemark,Telemark,Midlandsk,21
+Seljord,Seljord,Telemark,Vestfold og Telemark,Telemark,Midlandsk,21
+Kviteseid,Kviteseid,Telemark,Vestfold og Telemark,Telemark,Midlandsk,21
+Nissedal,Nissedal,Telemark,Vestfold og Telemark,Telemark,Sørlandsk,21
+Fyresdal,Fyresdal,Telemark,Vestfold og Telemark,Telemark,Sørlandsk,21
+Tokke,Tokke,Telemark,Vestfold og Telemark,Telemark,Midlandsk,21
+Vinje,Vinje,Telemark,Vestfold og Telemark,Telemark,Midlandsk,21
+Bergen,Bergen,Hordaland,Vestland,Vestland,Sørvestlandsk,17
+Flora,Kinn,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Vågsøy,Kinn,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+,Kinn,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Etne,Etne,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Sveio,Sveio,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Bømlo,Bømlo,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Stord,Stord,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Fitjar,Fitjar,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Tysnes,Tysnes,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Kvinnherad,Kvinnherad,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Jondal,Ullensvang,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Odda,Ullensvang,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Ullensvang,Ullensvang,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Eidfjord,Eidfjord,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Ulvik,Ulvik,Hordaland,Vestland,Vestland,Sørvestlandsk,15
+Granvin,Voss,Hordaland,Vestland,Vestland,Sørvestlandsk,15
+Voss,Voss,Hordaland,Vestland,Vestland,Sørvestlandsk,15
+Kvam,Kvam,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Samnanger,Samnanger,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Fusa,Bjørnafjorden,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Os,Bjørnafjorden,Hordaland,Vestland,Vestland,Sørvestlandsk,17
+,Bjørnafjorden,Hordaland,Vestland,Vestland,Sørvestlandsk,17
+Austevoll,Austevoll,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Sund,Øygarden,Hordaland,Vestland,Vestland,Sørvestlandsk,17
+Fjell,Øygarden,Hordaland,Vestland,Vestland,Sørvestlandsk,17
+Øygarden,Øygarden,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Askøy,Askøy,Hordaland,Vestland,Vestland,Sørvestlandsk,17
+Vaksdal,Vaksdal,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Modalen,Modalen,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Osterøy,Osterøy,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Meland,Alver,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Radøy,Alver,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Lindås,Alver,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+,Alver,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Austrheim,Austrheim,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Fedje,Fedje,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Masfjorden,Masfjorden,Hordaland,Vestland,Vestland,Sørvestlandsk,16
+Gulen,Gulen,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Solund,Solund,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Hyllestad,Hyllestad,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Høyanger,Høyanger,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Vik,Vik,Sogn og Fjordane,Vestland,Vestland,Sørvestlandsk,14
+Balestrand,Sogndal,Sogn og Fjordane,Vestland,Vestland,Sørvestlandsk,14
+Leikanger,Sogndal,Sogn og Fjordane,Vestland,Vestland,Sørvestlandsk,14
+Sogndal,Sogndal,Sogn og Fjordane,Vestland,Vestland,Sørvestlandsk,14
+Aurland,Aurland,Sogn og Fjordane,Vestland,Vestland,Sørvestlandsk,14
+Lærdal,Lærdal,Sogn og Fjordane,Vestland,Vestland,Sørvestlandsk,14
+Årdal,Årdal,Sogn og Fjordane,Vestland,Vestland,Sørvestlandsk,14
+Luster,Luster,Sogn og Fjordane,Vestland,Vestland,Sørvestlandsk,14
+Askvoll,Askvoll,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Fjaler,Fjaler,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Gaular,Sunnfjord,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Jølster,Sunnfjord,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Førde,Sunnfjord,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Naustdal,Sunnfjord,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+,Sunnfjord,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Bremanger,Bremanger,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Vågsøy,Stad,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Selje,Stad,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,12
+Eid,Stad,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+,Stad,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Gloppen,Gloppen,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Stryn,Stryn,Sogn og Fjordane,Vestland,Vestland,Nordvestlandsk,13
+Halden,Halden,Østfold,Viken,Østfold,Østlandsk,23
+Moss,Moss,Østfold,Viken,Østfold,Østlandsk,23
+Rygge,Moss,Østfold,Viken,Østfold,Østlandsk,23
+Sarpsborg,Sarpsborg,Østfold,Viken,Østfold,Østlandsk,23
+Fredrikstad,Fredrikstad,Østfold,Viken,Østfold,Østlandsk,23
+Drammen,Drammen,Buskerud,Viken,Buskerud,Østlandsk,23
+Nedre Eiker,Drammen,Buskerud,Viken,Buskerud,Østlandsk,23
+Svelvik,Drammen,Vestfold,Viken,Buskerud,Østlandsk,23
+,Drammen,Vestfold,Viken,Buskerud,Østlandsk,23
+Kongsberg,Kongsberg,Buskerud,Viken,Buskerud,Østlandsk,23
+Ringerike,Ringerike,Buskerud,Viken,Buskerud,Østlandsk,21
+Hvaler,Hvaler,Østfold,Viken,Østfold,Østlandsk,23
+Aremark,Aremark,Østfold,Viken,Østfold,Østlandsk,23
+Marker,Marker,Østfold,Viken,Østfold,Østlandsk,23
+Trøgstad,Indre Østfold,Østfold,Viken,Østfold,Østlandsk,23
+Spydeberg,Indre Østfold,Østfold,Viken,Østfold,Østlandsk,23
+Askim,Indre Østfold,Østfold,Viken,Østfold,Østlandsk,23
+Eidsberg,Indre Østfold,Østfold,Viken,Østfold,Østlandsk,23
+Hobøl,Indre Østfold,Østfold,Viken,Østfold,Østlandsk,23
+,Indre Østfold,Østfold,Viken,Østfold,Østlandsk,23
+Skiptvet,Skiptvet,Østfold,Viken,Østfold,Østlandsk,23
+Rakkestad,Rakkestad,Østfold,Viken,Østfold,Østlandsk,23
+Råde,Råde,Østfold,Viken,Østfold,Østlandsk,23
+Våler,Våler,Østfold,Viken,Østfold,Østlandsk,23
+Vestby,Vestby,Akershus,Viken,Akershus,Østlandsk,22
+Ski,Nordre Follo,Akershus,Viken,Akershus,Østlandsk,22
+Oppegård,Nordre Follo,Akershus,Viken,Akershus,Østlandsk,22
+,Nordre Follo,Akershus,Viken,Akershus,Østlandsk,22
+Ås,Ås,Akershus,Viken,Akershus,Østlandsk,22
+Frogn,Frogn,Akershus,Viken,Akershus,Østlandsk,22
+Nesodden,Nesodden,Akershus,Viken,Akershus,Østlandsk,22
+Bærum,Bærum,Akershus,Viken,Akershus,Østlandsk,22
+Asker,Asker,Akershus,Viken,Akershus,Østlandsk,22
+Røyken,Asker,Buskerud,Viken,Akershus,Østlandsk,23
+Hurum,Asker,Buskerud,Viken,Akershus,Østlandsk,23
+,Asker,Buskerud,Viken,Akershus,Østlandsk,23
+Rømskog,Aurskog-Høland,Østfold,Viken,Akershus,Østlandsk,23
+,Aurskog-Høland,Østfold,Viken,Akershus,Østlandsk,23
+Aurskog-Høland,Aurskog-Høland,Akershus,Viken,Akershus,Østlandsk,22
+Rælingen,Rælingen,Akershus,Viken,Akershus,Østlandsk,22
+Enebakk,Enebakk,Akershus,Viken,Akershus,Østlandsk,22
+Lørenskog,Lørenskog,Akershus,Viken,Akershus,Østlandsk,22
+Sørum,Lillestrøm,Akershus,Viken,Akershus,Østlandsk,22
+Fet,Lillestrøm,Akershus,Viken,Akershus,Østlandsk,22
+Skedsmo,Lillestrøm,Akershus,Viken,Akershus,Østlandsk,22
+,Lillestrøm,Akershus,Viken,Akershus,Østlandsk,22
+Nittedal,Nittedal,Akershus,Viken,Akershus,Østlandsk,22
+Gjerdrum,Gjerdrum,Akershus,Viken,Akershus,Østlandsk,22
+Ullensaker,Ullensaker,Akershus,Viken,Akershus,Østlandsk,22
+Nes,Nes,Akershus,Viken,Akershus,Østlandsk,22
+Eidsvoll,Eidsvoll,Akershus,Viken,Akershus,Østlandsk,22
+Nannestad,Nannestad,Akershus,Viken,Akershus,Østlandsk,22
+Hurdal,Hurdal,Akershus,Viken,Akershus,Østlandsk,22
+Hole,Hole,Buskerud,Viken,Buskerud,Østlandsk,21
+Flå,Flå,Buskerud,Viken,Buskerud,Midlandsk,21
+Nes,Nesbyen,Buskerud,Viken,Buskerud,Midlandsk,21
+,Nesbyen,Buskerud,Viken,Buskerud,Midlandsk,21
+Gol,Gol,Buskerud,Viken,Buskerud,Midlandsk,21
+Hemsedal,Hemsedal,Buskerud,Viken,Buskerud,Midlandsk,21
+Ål,Ål,Buskerud,Viken,Buskerud,Midlandsk,21
+Hol,Hol,Buskerud,Viken,Buskerud,Midlandsk,21
+Sigdal,Sigdal,Buskerud,Viken,Buskerud,Midlandsk,21
+Krødsherad,Krødsherad,Buskerud,Viken,Buskerud,Midlandsk,21
+Modum,Modum,Buskerud,Viken,Buskerud,Østlandsk,21
+Øvre Eiker,Øvre Eiker,Buskerud,Viken,Buskerud,Østlandsk,23
+Lier,Lier,Buskerud,Viken,Buskerud,Østlandsk,23
+Flesberg,Flesberg,Buskerud,Viken,Buskerud,Midlandsk,21
+Rollag,Rollag,Buskerud,Viken,Buskerud,Midlandsk,21
+Nore og Uvdal,Nore og Uvdal,Buskerud,Viken,Buskerud,Midlandsk,21
+Jevnaker,Jevnaker,Oppland,Viken,Akershus,Østlandsk,21
+Lunner,Lunner,Oppland,Viken,Akershus,Østlandsk,21
