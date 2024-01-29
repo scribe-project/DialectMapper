@@ -72,11 +72,135 @@ class mapper_methods:
         if input_str in fine_to_cardinal:
             return fine_to_cardinal[input_str]
         else:
-            named_dialect = self.get_named_dialect(input_str)
-            if named_dialect and named_dialect in fine_to_cardinal:
-                return fine_to_cardinal[named_dialect]
+            raise Exception('This method is depreciated for input other than named dialects. Please use either get_cardinal_four_dialect() or get_cardinal_five_dialect()')
+            # if isinstance(input_str, str):
+            #     named_dialect = self.get_named_dialect(input_str)
+            #     if named_dialect and named_dialect in fine_to_cardinal:
+            #         return fine_to_cardinal[named_dialect]
+            #     else:
+            #         return None
+            # elif isinstance(input_str, int):
+            #     named_dialect = self.get
+
+    # ----------------- CARDINAL dialect methods -----------------
+    def get_cardinal_four_by_old_municipality(self, old_municipality) -> list:
+        old_municipality = old_municipality.lower().strip()
+        old_municipality = self._get_corrections(old_municipality)
+        # if old_municipality is not a Norwegian muni then it will be none
+        # which causes problems b/c in the csv data old_muni being empty means there isn't an old muni corresponding to the new muni
+        # thus we want to ignore old_munis being none instead of returning all the new munis w/o an old 
+        if old_municipality == '':
+            return []
+        return sorted(list(set([x.cardinal_four for x in self.csv_tuples if x.old_muni.lower().strip() == old_municipality])))
+    def get_cardinal_four_by_new_municipality(self, new_municipality) -> list:
+        new_municipality = new_municipality.lower().strip()
+        new_municipality = self._get_corrections(new_municipality)
+        return sorted(list(set([x.cardinal_four for x in self.csv_tuples if x.new_muni.lower().strip() == new_municipality])))
+    def get_cardinal_four_by_old_county(self, old_county) -> list:
+        return sorted(list(set([x.cardinal_four for x in self.csv_tuples if x.old_county.lower().strip() == old_county.lower().strip()])))
+    def get_cardinal_four_by_new_county(self, new_county) -> list:
+        return sorted(list(set([x.cardinal_four for x in self.csv_tuples if x.new_county.lower().strip() == new_county.lower().strip()])))
+    def get_cardinal_four_by_new_county_2024(self, new_county) -> list:
+        return sorted(list(set([x.cardinal_four for x in self.csv_tuples if x.new_county_2024.lower().strip() == new_county.lower().strip()])))
+    
+    def get_cardinal_four(self, lookup_by: str, resolve_ambigious='new'):
+        if self.is_ambiguious_municipality(lookup_by):
+            resolve_ambigious = resolve_ambigious.lower().strip()
+            if resolve_ambigious in ['new', 'old']:
+                if resolve_ambigious == 'new':
+                    dialects = self.get_ncardinal_four_by_new_municipality(lookup_by)
+                    return self.format_dialect_response(dialects)
+                else:
+                    dialects = self.get_cardinal_four_by_old_municipality(lookup_by)
+                    return self.format_dialect_response(dialects)
             else:
-                return None
+                print("Unknown way of resolving ambigious municipality for {}. Using new municipality.".format(lookup_by))
+
+        # by looking up by old municipality first we're prioritizing it. I don't have a super strong arguement as to the why,
+        # presumably old municipalities will have fewer one to many mappings. But, if we feel like going with the new municipalities
+        # is better this can easily be changed                
+        dialects = self.get_cardinal_four_by_old_municipality(lookup_by)
+        if len(dialects) > 0:
+            return self.format_dialect_response(dialects)
+        else:
+            dialects = self.get_cardinal_four_by_new_municipality(lookup_by)
+            if len(dialects) > 0:
+                return self.format_dialect_response(dialects)
+            else:
+                dialects = self.get_cardinal_four_by_old_county(lookup_by)
+                if len(dialects) > 0:
+                    return self.format_dialect_response(dialects)
+                else:
+                    dialects = self.get_cardinal_four_by_new_county(lookup_by)
+                    if len(dialects) > 0:
+                        return self.format_dialect_response(dialects)
+                    else:
+                        dialects = self.get_cardinal_four_by_new_county_2024(lookup_by)
+                        if len(dialects) > 0:
+                            return self.format_dialect_response(dialects)
+                        else:
+                            print("ERROR: cannot find named dialect for: {}".format(lookup_by))
+                            return None
+                        
+    def get_cardinal_five_by_old_municipality(self, old_municipality) -> list:
+        old_municipality = old_municipality.lower().strip()
+        old_municipality = self._get_corrections(old_municipality)
+        # if old_municipality is not a Norwegian muni then it will be none
+        # which causes problems b/c in the csv data old_muni being empty means there isn't an old muni corresponding to the new muni
+        # thus we want to ignore old_munis being none instead of returning all the new munis w/o an old 
+        if old_municipality == '':
+            return []
+        return sorted(list(set([x.cardinal_five for x in self.csv_tuples if x.old_muni.lower().strip() == old_municipality])))
+    def get_cardinal_five_by_new_municipality(self, new_municipality) -> list:
+        new_municipality = new_municipality.lower().strip()
+        new_municipality = self._get_corrections(new_municipality)
+        return sorted(list(set([x.cardinal_five for x in self.csv_tuples if x.new_muni.lower().strip() == new_municipality])))
+    def get_cardinal_five_by_old_county(self, old_county) -> list:
+        return sorted(list(set([x.cardinal_five for x in self.csv_tuples if x.old_county.lower().strip() == old_county.lower().strip()])))
+    def get_cardinal_five_by_new_county(self, new_county) -> list:
+        return sorted(list(set([x.cardinal_five for x in self.csv_tuples if x.new_county.lower().strip() == new_county.lower().strip()])))
+    def get_cardinal_five_by_new_county_2024(self, new_county) -> list:
+        return sorted(list(set([x.cardinal_five for x in self.csv_tuples if x.new_county_2024.lower().strip() == new_county.lower().strip()])))
+    
+    def get_cardinal_five(self, lookup_by: str, resolve_ambigious='new'):
+        if self.is_ambiguious_municipality(lookup_by):
+            resolve_ambigious = resolve_ambigious.lower().strip()
+            if resolve_ambigious in ['new', 'old']:
+                if resolve_ambigious == 'new':
+                    dialects = self.get_cardinal_five_by_new_municipality(lookup_by)
+                    return self.format_dialect_response(dialects)
+                else:
+                    dialects = self.get_cardinal_five_by_old_municipality(lookup_by)
+                    return self.format_dialect_response(dialects)
+            else:
+                print("Unknown way of resolving ambigious municipality for {}. Using new municipality.".format(lookup_by))
+
+        # by looking up by old municipality first we're prioritizing it. I don't have a super strong arguement as to the why,
+        # presumably old municipalities will have fewer one to many mappings. But, if we feel like going with the new municipalities
+        # is better this can easily be changed                
+        dialects = self.get_cardinal_five_by_old_municipality(lookup_by)
+        if len(dialects) > 0:
+            return self.format_dialect_response(dialects)
+        else:
+            dialects = self.get_cardinal_five_by_new_municipality(lookup_by)
+            if len(dialects) > 0:
+                return self.format_dialect_response(dialects)
+            else:
+                dialects = self.get_cardinal_five_by_old_county(lookup_by)
+                if len(dialects) > 0:
+                    return self.format_dialect_response(dialects)
+                else:
+                    dialects = self.get_cardinal_five_by_new_county(lookup_by)
+                    if len(dialects) > 0:
+                        return self.format_dialect_response(dialects)
+                    else:
+                        dialects = self.get_cardinal_five_by_new_county_2024(lookup_by)
+                        if len(dialects) > 0:
+                            return self.format_dialect_response(dialects)
+                        else:
+                            print("ERROR: cannot find named dialect for: {}".format(lookup_by))
+                            return None
+
 
     # ----------------- NAMED dialect methods -----------------
     def get_old_municipalities_from_named_dialect(self, named_dialect: str) -> list:
@@ -301,6 +425,22 @@ class mapper_methods:
         for row in cReader:
             self.stortinget_corrections[row[0]] = row[1]
 
+    def enable_ndc_corrections(self) -> None:
+        # There are some birth_kommunes from the Stortinget API that are either cities/towns instead of kommunes or have a typo ("opdal" looking at you)
+        # this method will switch the flag so later queries use the corrected mapping and load the mapping data
+        # NOTE: this will only correct the input. Presumably the resource table has the correct names
+        self.use_ndc_corrections = True
+        cReader = csv.reader(
+            StringIO(
+                pkg_resources.read_text(
+                    mapping_data, 
+                    'ndc_transform.csv'
+                )
+            )
+        )
+        for row in cReader:
+            self.ndc_corrections[row[0].lower()] = row[1].lower()
+
     def _get_nbtale_correction(self, lookup_by: str) -> str:
         if lookup_by in self.nbtale_corrections:
             lookup_by = self.nbtale_corrections[lookup_by]
@@ -316,6 +456,11 @@ class mapper_methods:
             lookup_by = self.stortinget_corrections[lookup_by]
         return lookup_by
     
+    def _get_ndc_corrections(self, lookup_by: str) -> str:
+        if lookup_by in self.ndc_corrections:
+            lookup_by = self.ndc_corrections[lookup_by]
+        return lookup_by
+
     def _get_corrections(self, lookup_by: str) -> str:
         if self.use_nbtale_corrections:
             lookup_by = self._get_nbtale_correction(lookup_by)
@@ -323,6 +468,8 @@ class mapper_methods:
             lookup_by = self._get_npsc_correction(lookup_by)
         if self.use_stortinget_corrections:
             lookup_by = self._get_stortinget_correction(lookup_by)
+        if self.use_ndc_corrections:
+            lookup_by = self._get_ndc_corrections(lookup_by)
         return lookup_by
 
     def enable_fine_grained_dialect_collapse(self):
@@ -342,18 +489,21 @@ class mapper_methods:
         self.use_nbtale_corrections = False
         self.use_npsc_corrections = False
         self.use_stortinget_corrections = False
+        self.use_ndc_corrections = False
         self.raw_csv_data = []
         self.nbtale_corrections = {}
         self.nbtale_speakers_to_named_dialects = {}
         self.npsc_corrections = {}
         self.stortinget_corrections = {}
+        self.ndc_corrections = {}
         self.collapse_fine_grained_dialects = False
 
         cReader = csv.reader(
             StringIO(
                 pkg_resources.read_text(
                     mapping_data, 
-                    'muni_county_namedDialect_numericDialect_mapping_manual_additions_renamed_2024.csv'
+                    # 'muni_county_namedDialect_numericDialect_mapping_manual_additions_renamed_2024.csv'
+                    'muni_county_namedDialect_numericDialect_mapping_manual_additions_renamed_2024_cardinals.csv'
                 )
             )
         )
