@@ -108,7 +108,7 @@ class mapper_methods:
             resolve_ambigious = resolve_ambigious.lower().strip()
             if resolve_ambigious in ['new', 'old']:
                 if resolve_ambigious == 'new':
-                    dialects = self.get_ncardinal_four_by_new_municipality(lookup_by)
+                    dialects = self.get_cardinal_four_by_new_municipality(lookup_by)
                     return self.format_dialect_response(dialects)
                 else:
                     dialects = self.get_cardinal_four_by_old_municipality(lookup_by)
