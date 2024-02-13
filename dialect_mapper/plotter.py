@@ -61,6 +61,9 @@ class ColorMap():
 
 
 class plotter_methods:
+    '''
+    A class to make creating maps/plots of Norway easy. Of especial use is shading different regions
+    '''
 
     def _convert_latlon_to_xy(self, latitude, longitude, mapWidth=200, mapHeight=100, move_south=False):
         """
@@ -93,7 +96,7 @@ class plotter_methods:
         else:
             return Polygon(obj[0])
 
-    def _process_features(self, features, get_color, final_width, final_height, split_norway=False, rotate_norway=False):
+    def _process_features(self, features, get_color, final_width, final_height, split_norway=False, rotate_norway=False, stroke_width=0.025):
         svg_list = []
         min_x = None
         min_y = None
@@ -119,7 +122,7 @@ class plotter_methods:
                     region_name += '_Nordvestlandsk'
             svg_list.append(
                 self.stroke_width_pat.sub(
-                    'stroke-width="0.025"',
+                    'stroke-width="{}"'.format(str(stroke_width)),
                     region_multiPolygon.svg(fill_color=get_color(region_name), opacity=1)
                 )   
             )
@@ -272,7 +275,9 @@ class plotter_methods:
         final_width='500', 
         final_height='500',
         split_norway=False,
-        rotate_norway=False):
+        rotate_norway=False,
+        stroke_width=0.025
+    ):
 
         cmap = ColorMap(color_map_name, levels=color_map_levels)
         def get_color(region_name):
@@ -289,7 +294,8 @@ class plotter_methods:
             final_width,
             final_height,
             split_norway=split_norway,
-            rotate_norway=rotate_norway
+            rotate_norway=rotate_norway,
+            stroke_width=stroke_width
         )
         self._save_output(
             output_svg_filepath,
