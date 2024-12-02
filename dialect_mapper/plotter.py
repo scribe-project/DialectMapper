@@ -120,12 +120,20 @@ class plotter_methods:
                     region_name += '_Helgelandsk'
                 else:
                     region_name += '_Nordvestlandsk'
-            svg_list.append(
-                self.stroke_width_pat.sub(
-                    'stroke-width="{}"'.format(str(stroke_width)),
-                    region_multiPolygon.svg(fill_color=get_color(region_name), opacity=1)
-                )   
-            )
+            if get_color(region_name):
+                svg_list.append(
+                    self.stroke_width_pat.sub(
+                        'stroke-width="{}"'.format(str(stroke_width)),
+                        region_multiPolygon.svg(fill_color=get_color(region_name), opacity=1)
+                    )   
+                )
+            else:
+                svg_list.append(
+                    self.stroke_width_pat.sub(
+                        'stroke-width="{}"'.format(str(stroke_width)),
+                        region_multiPolygon.svg(fill_color='#ffffff', opacity=1)
+                    )   
+                )
             mp_bounds = region_multiPolygon.bounds
             if min_x == None:
                 min_x = mp_bounds[0]
@@ -212,6 +220,84 @@ class plotter_methods:
                 return default_color
         svg_list, min_x, min_y, width, height = self._process_features(
             self.kommuner_json['features'], 
+            get_color,
+            final_height,
+            final_width
+            )
+        self._save_output(
+            output_svg_filepath,
+            final_width, 
+            final_height,
+            min_x, 
+            min_y, 
+            width, 
+            height,
+            svg_list
+        )
+
+    def plot_card4_dialect_regions(
+        self, 
+        output_svg_filepath, 
+        dia_region_to_value={}, 
+        color_map_name='Blues', 
+        color_map_levels=50, 
+        max_region_value=30, 
+        default_color='#66cc99', 
+        final_width='500', 
+        final_height='500'):
+
+        final_width = float(final_width)
+        final_height = float(final_height)
+        cmap = ColorMap(color_map_name, levels=color_map_levels)
+        def get_color(dialect_name):
+            if dialect_name in dia_region_to_value:
+                if dia_region_to_value.get(dialect_name) == None:
+                    return None
+                else:
+                    return cmap.to_color_linear_scale(dia_region_to_value.get(dialect_name), max_region_value)
+            else:
+                return default_color
+        svg_list, min_x, min_y, width, height = self._process_features(
+            self.card4_dialekter_json['features'], 
+            get_color,
+            final_height,
+            final_width
+            )
+        self._save_output(
+            output_svg_filepath,
+            final_width, 
+            final_height,
+            min_x, 
+            min_y, 
+            width, 
+            height,
+            svg_list
+        )
+
+    def plot_card5_dialect_regions(
+        self, 
+        output_svg_filepath, 
+        dia_region_to_value={}, 
+        color_map_name='Blues', 
+        color_map_levels=50, 
+        max_region_value=30, 
+        default_color='#66cc99', 
+        final_width='500', 
+        final_height='500'):
+
+        final_width = float(final_width)
+        final_height = float(final_height)
+        cmap = ColorMap(color_map_name, levels=color_map_levels)
+        def get_color(dialect_name):
+            if dialect_name in dia_region_to_value:
+                if dia_region_to_value.get(dialect_name) == None:
+                    return None
+                else:
+                    return cmap.to_color_linear_scale(dia_region_to_value.get(dialect_name), max_region_value)
+            else:
+                return default_color
+        svg_list, min_x, min_y, width, height = self._process_features(
+            self.card5_dialekter_json['features'], 
             get_color,
             final_height,
             final_width
@@ -315,6 +401,22 @@ class plotter_methods:
                 pkg_resources.read_text(
                     mapping_data, 
                     'dialekter_geojson.json'
+                )
+            )
+        )
+        self.card4_dialekter_json = json.load(
+            StringIO(
+                pkg_resources.read_text(
+                    mapping_data, 
+                    'card4_region_geojson.json'
+                )
+            )
+        )
+        self.card5_dialekter_json = json.load(
+            StringIO(
+                pkg_resources.read_text(
+                    mapping_data, 
+                    'card5_region_geojson.json'
                 )
             )
         )

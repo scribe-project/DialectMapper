@@ -72,7 +72,7 @@ class mapper_methods:
         if input_str in fine_to_cardinal:
             return fine_to_cardinal[input_str]
         else:
-            raise Exception('This method is depreciated for input other than named dialects. Please use either get_cardinal_four_dialect() or get_cardinal_five_dialect()')
+            raise Exception('This method is depreciated for input other than named dialects. {} does not appear to be a named dialect. Please use either get_cardinal_four_dialect() or get_cardinal_five_dialect()'.format(input_str))
             # if isinstance(input_str, str):
             #     named_dialect = self.get_named_dialect(input_str)
             #     if named_dialect and named_dialect in fine_to_cardinal:
