@@ -1,5 +1,9 @@
 # Dialect mapper
 
+The CSV on which this repo relies has been officially published throught the National Library of Norway's Language Bank. It can be accessed [here](https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-92/).
+
+## General information
+
 Dialectal information given about speakers can vary between corpora. Some corpora may record the municipality of birth, or the county, or others may record the speakers' self-assessed dialect. We'd like a way of standardizing, or creating a meta-corpora mapping, between dialects and counties and municipalities. 
 
 This package is bascially a wrapper around a file mapping between counties, municipalities, and dialects
