@@ -2,7 +2,10 @@
 
 The CSV on which this repo relies has been officially published throught the National Library of Norway's Language Bank. It can be accessed [here](https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-92/).
 
-If you find this code or dialect mappings useful, please cite [Adding Metadata to Existing Parliamentary Speech Corpus](https://aclanthology.org/2025.nodalida-1.49/)
+If you find this code or dialect mappings useful, please cite:
+
+Phoebe Parsons, Per Erik Solberg, Knut Kvale, Torbjørn Svendsen, and Giampiero Salvi. 2025. [Adding Metadata to Existing Parliamentary Speech Corpus](https://aclanthology.org/2025.nodalida-1.49/). _In Proceedings of the Joint 25th Nordic Conference on Computational Linguistics and 11th Baltic Conference on Human Language Technologies (NoDaLiDa/Baltic-HLT 2025)_, pages 448–457, Tallinn, Estonia. University of Tartu Library.
+
 
 ## General information
 
