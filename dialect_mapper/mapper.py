@@ -103,7 +103,12 @@ class mapper_methods:
     def get_cardinal_four_by_new_county_2024(self, new_county) -> list:
         return sorted(list(set([x.cardinal_four for x in self.csv_tuples if x.new_county_2024.lower().strip() == new_county.lower().strip()])))
     
+    def get_cardinal_four_from_numeric(self, dialect_number: str) -> list:
+        return sorted(list(set([x.cardinal_four for x in self.csv_tuples if x.numeric_dialect == dialect_number])))
+
     def get_cardinal_four(self, lookup_by: str, resolve_ambigious='new'):
+        if not lookup_by:
+            return None
         if self.is_ambiguious_municipality(lookup_by):
             resolve_ambigious = resolve_ambigious.lower().strip()
             if resolve_ambigious in ['new', 'old']:
@@ -163,6 +168,8 @@ class mapper_methods:
         return sorted(list(set([x.cardinal_five for x in self.csv_tuples if x.new_county_2024.lower().strip() == new_county.lower().strip()])))
     
     def get_cardinal_five(self, lookup_by: str, resolve_ambigious='new'):
+        if not lookup_by:
+            return None
         if self.is_ambiguious_municipality(lookup_by):
             resolve_ambigious = resolve_ambigious.lower().strip()
             if resolve_ambigious in ['new', 'old']:
