@@ -14,7 +14,7 @@ Corpora may record a speaker’s municipality of birth, county, or self-assessed
 
 The alignment between municipalities, counties, and dialects was developed manually by Phoebe Parsons, with feedback from Per Erik Solberg. It began by consulting dialect maps, including Skjekkeland’s _Dei norske dialektane_ (page 276), and aligning the municipalities and counties in use at the time with dialect regions. The mapping was then extended to historical municipalities and counties using Wikipedia pages describing historical counties and their constituent municipalities. The 2024 county updates were created by programmatically parsing the table on the government’s [Nye kommune og fylkesnummer](https://www.regjeringen.no/no/tema/kommuner-og-regioner/kommunestruktur/nye-kommune-og-fylkesnummer-fra-1.-januar-2024/id2924701/) page.
 
-The named dialects follow Skjekkeland’s book, with its four Eastern regions collapsed into one and names translated from Nynorsk to Bokmål. The original author recalled that the numbered dialects came from a Speech-Dat survey used in NST, but could not verify that provenance; it remains unconfirmed.
+The named dialects follow Skjekkeland’s book, with its four Eastern regions collapsed into one and names translated from Nynorsk to Bokmål. The numbered dialects are based on the TABU.0 (Amdal, I. og Ljøen, H. (1995). TABU.0 - en norsk telefontaledatabase. FoU R 40/95. Telenor FoU.) regions.
 
 The first CSV column contains historical municipalities and the second contains newer municipalities. Where possible, each row links an old municipality to the municipality it became. An empty historical municipality denotes a newer municipality without a historical equivalent in the table. The county columns likewise align names over time.
 
