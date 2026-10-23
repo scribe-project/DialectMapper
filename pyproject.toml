@@ -9,9 +9,9 @@ repository = "https://github.com/scribe-project/norwegianDialects/dialect_mapper
 include = ["LICENCE"]
 
 [tool.poetry.dependencies]
-python = "^3.6.2"
+python = "^3.8"
 matplotlib = "3.6.1"
-shapely = "2.0b1"
+shapely = "^2.1.2"
 numpy = "^1.20.0"
 cairosvg = "2.6.0"
 
